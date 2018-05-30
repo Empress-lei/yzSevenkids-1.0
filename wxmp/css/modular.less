@@ -1,0 +1,1319 @@
+@import "base_mob.css";
+@import "datesele.css";
+//z-index值从1开始
+.mobils_warp {
+  width: 100%;
+  height: 100%;
+  max-width: 540px;
+  -webkit-overflow-scrolling: touch;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  .play {
+    position: fixed;
+    top: 18/37.5rem;
+    right: 18/37.5rem;
+    z-index: 555;
+    width: 42/37.5rem !important;
+    height: 42/37.5rem !important;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    img {
+      display: block;
+      width: 23.2/37.5rem;
+      margin: 9.4/37.5rem auto;
+      position: relative;
+      z-index: 333;
+    }
+  }
+  .pause {
+    position: fixed;
+    top: 18/37.5rem;
+    right: 18/37.5rem;
+    z-index: 555;
+    width: 42/37.5rem !important;
+    height: 42/37.5rem !important;
+    display: block !important;
+    margin: 0 auto !important;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    -webkit-animation: rotating 1.2s linear infinite;
+    -moz-animation: rotating 1.2s linear infinite;
+    -ms-animation: rotating 1.2s linear infinite;
+    -o-animation: rotating 1.2s linear infinite;
+    animation: rotating 1.2s linear infinite;
+    img {
+      display: block;
+      width: 23.2/37.5rem;
+      margin: 9.4/37.5rem auto;
+      position: relative;
+      z-index: 333;
+    }
+  }
+  //我的活动   黑色字体
+  .activity_btnblack {
+    position: fixed;
+    right: 20/37.5rem;
+    bottom: 20/37.5rem;
+    z-index: 555;
+    .btnimg {
+      width: 60/37.5rem;
+      height: 60/37.5rem;
+    }
+    .btn {
+      display: block;
+      font-size: 12/37.5rem;
+      text-align: center;
+      color: #181818;
+    }
+  }
+  //像下的箭头
+  .arrow_b {
+    display: block;
+    width: 40/75rem;
+    height: 40/75rem;
+    position: absolute;
+    left: 50%;
+    bottom: 50/75rem;
+    border: 3px solid transparent;
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+    z-index: 99;
+    opacity: .8;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+    -webkit-animation: arrow_b 1.5s infinite ease-in-out;
+    -moz-animation: arrow_b 1.5s infinite ease-in-out;
+    -ms-animation: arrow_b 1.5s infinite ease-in-out;
+    -o-animation: arrow_b 1.5s infinite ease-in-out;
+    animation: arrow_b 1.5s infinite ease-in-out;
+  }
+  //向上的箭头
+  .arrow_t {
+    display: block;
+    width: 40/75rem;
+    height: 40/75rem;
+    position: absolute;
+    left: 50%;
+    bottom: 50/75rem;
+    border: 3px solid transparent;
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+    z-index: 99;
+    opacity: .8;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-animation: arrow_t 1.5s infinite ease-in-out;
+    -moz-animation: arrow_t 1.5s infinite ease-in-out;
+    -ms-animation: arrow_t 1.5s infinite ease-in-out;
+    -o-animation: arrow_t 1.5s infinite ease-in-out;
+    animation: arrow_t 1.5s infinite ease-in-out;
+  }
+
+  .myswiper-container {
+    width: 100%;
+    height: 100%;
+    .swiper-wrapper {
+      width: 100%;
+    }
+  }
+  //端午节活动
+  .dra_page {
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    //第一个竹子(第一屏和第二屏公用)
+    .bam_one {
+      width: 105/37.5rem;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    //第二个竹子(第一屏和第二屏公用)
+    .bam_tow {
+      width: 55/37.5rem;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      -webkit-transform: translate(0, -50%);
+      -mos-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+      -o-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+    }
+    //第一屏  首页
+    .dra_home {
+      //display: none;
+      width: 100%;
+      height: 100%;
+      background-size: 100% 100%;
+      position: relative;
+      //背景上的圆
+      .cri {
+        display: block;
+        width: 241/37.5rem;
+        margin: 74/37.5rem auto 0;
+      }
+      //第一个云
+      .cloud_noe {
+        position: absolute;
+        right: 38/37.5rem;
+        top: 112/37.5rem;
+        width: 94/37.5rem;
+        height: 24/37.5rem;
+      }
+      //第二个云
+      .cloud_two {
+        position: absolute;
+        left: 55/37.5rem;
+        top: 255/37.5rem;
+        width: 79/37.5rem;
+        height: 20/37.5rem;
+      }
+      //端
+      .theme_one {
+        position: absolute;
+        left: 130/37.5rem;
+        top: 38/37.5rem;
+        width: 87/37.5rem;
+      }
+      //午
+      .theme_two {
+        position: absolute;
+        left: 173/37.5rem;
+        top: 109/37.5rem;
+        width: 75/37.5rem;
+      }
+      //节
+      .theme_thr {
+        position: absolute;
+        left: 160/37.5rem;
+        top: 198/37.5rem;
+        width: 81/37.5rem;
+      }
+      //五月五文字
+      .theme_four {
+        position: absolute;
+        left: 124/37.5rem;
+        top: 130/37.5rem;
+        width: 25/37.5rem;
+      }
+      //传统节日文字
+      .text_p {
+        text-align: center;
+        font-size: 18/37.5rem;
+        color: #027838;
+        line-height: 25/37.5rem;
+        padding-top: 20/37.5rem;
+      }
+      //龙舟
+      .loo {
+        position: absolute;
+        z-index: 2;
+        left: 26/37.5rem;
+        top: 340/37.5rem;
+        width: 304/37.5rem;
+      }
+      //粽子图片
+      .rice {
+        position: absolute;
+        z-index: 1;
+        left: 50%;
+        bottom: 53/37.5rem;
+        width: 240/37.5rem;
+        margin-left: -135/37.5rem;
+      }
+      //footer图
+      .footer_one {
+        position: absolute;
+        left: 0;
+        bottom: -15/37.5rem;
+        width: 100%;
+      }
+    }
+    //第二屏
+    .dra_invi {
+      width: 100%;
+      height: 100%;
+      background-size: 100% 100%;
+      position: relative;
+      .logo_render {
+        display: block;
+        width: 65/37.5rem;
+        height: 65/37.5rem;
+        margin: 30/37.5rem auto 0;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%;
+        border: 2/37.5rem solid #fff;
+      }
+      //幼儿园名称
+      .invi_title {
+        padding: 15/37.5rem 38/37.5rem 5/37.5rem;
+        p {
+          text-align: center;
+          font-size: 20/37.5rem;
+          line-height: 28/37.5rem;
+          color: #3D7223;
+        }
+      }
+      // 邀您参加免费亲子体验活动
+      .invi_txt {
+        text-align: center;
+        font-size: 14/37.5rem;
+        line-height: 20/37.5rem;
+        color: #3D7223;
+      }
+      //主题的标题位置
+      .theme_title {
+        position: absolute;
+        bottom: 260/37.5rem;
+        width: 100%;
+        .title_left {
+          position: absolute;
+          top: 3/37.5rem;
+          left: 53/37.5rem;
+          width: 23/37.5rem;
+        }
+        .title_right {
+          display: block;
+          margin-left: 80/37.5rem;
+          width: 244/37.5rem;
+        }
+      }
+      //主题图
+      .theme_img {
+        position: absolute;
+        bottom: 30/37.5rem;
+        left: 50%;
+        display: block;
+        width: 267/37.5rem;
+        margin-left: -133.5/37.5rem;
+        //margin: 50/37.5rem auto 0;
+      }
+      //第二屏的粽子
+      .rice_img {
+        display: block;
+        width: 239/37.5rem;
+        margin: -59/37.5rem auto 0;
+      }
+    }
+    //第三屏
+    .dra_intr {
+      width: 100%;
+      height: 100%;
+      background-size: 100% 100%;
+      position: relative;
+      //第三屏的第二个竹子
+      .bam_thr {
+        width: 55/37.5rem;
+        position: absolute;
+        left: 0;
+        top: 20/37.5rem;
+      }
+      //描述文本
+      .describe_img {
+        display: block;
+        margin: 60/37.5rem auto 17/37.5rem;
+        width: 340/37.5rem;
+      }
+      //节日习俗图片
+      .custom {
+        padding: 0 50/37.5rem 5/37.5rem 70/37.5rem;
+        .custom_left {
+
+          width: 110/37.5rem;
+        }
+        .custom_right {
+          width: 110/37.5rem;
+          margin-left: 20/37.5rem;
+        }
+      }
+      //赛龙舟图标
+      .sai_img {
+        display: block;
+        width: 89/37.5rem;
+        margin: 20/37.5rem auto 0;
+      }
+      //龙舟
+      .loo_thr {
+        display: block;
+        width: 345/37.5rem;
+        margin-left: 23/37.5rem;
+        margin-top: -30/37.5rem;
+        position: relative;
+        z-index: 3;
+      }
+      //文本
+      .intr_text {
+        position: relative;
+        z-index: 4;
+        p {
+          font-size: 14/37.5rem;
+          color: #333;
+          line-height: 20/37.5rem;
+          text-align: center;
+          padding-top: 6/37.5rem;
+        }
+      }
+      .footer_thr {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+      }
+    }
+    //第四屏活动信息
+    .dra_mess {
+      width: 100%;
+      height: 100%;
+      background-size: 100% 100%;
+      padding: 35/37.5rem 15/37.5rem 20/37.5rem;
+      .mess_title {
+        margin-bottom: 15/37.5rem;
+        font-size: 16/37.5rem;
+        color: #333;
+        line-height: 40/37.5rem;
+        background: url("../images/icon/tit.png") no-repeat left center;
+        background-size: 25/37.5rem 25/37.5rem;
+        padding-left: 35/37.5rem;
+      }
+      .mess_list {
+        width: 100%;
+        li {
+          width: 100%;
+          background: #FFF;
+          -webkit-border-radius: 8/37.5rem;
+          -moz-border-radius: 8/37.5rem;
+          -ms-border-radius: 8/37.5rem;
+          -o-border-radius: 8/37.5rem;
+          border-radius: 8/37.5rem;
+          margin-bottom: 8/37.5rem;
+          //时间的图标
+          .list {
+            width: 100%;
+            padding: 15/37.5rem 15/37.5rem 5/37.5rem;
+            .timeimg {
+              width: 16/37.5rem;
+              height: 16/37.5rem;
+              margin-top: 4/37.5rem;
+            }
+            .mess_time {
+              font-size: 14/37.5rem;
+              color: #333333;
+              position: relative;
+              z-index: 555;
+              line-height: 25/37.5rem;
+              padding-left: 10/37.5rem;
+            }
+            //地点的图标
+            .mess_address {
+              width: 16/37.5rem;
+              height: 16/37.5rem;
+              margin-top: 4/37.5rem;
+            }
+          }
+          .time_num {
+            font-size: 12/37.5rem;
+            line-height: 20/37.5rem;
+            color: #333;
+            padding: 0 15/37.5rem 15/37.5rem 40/37.5rem;
+          }
+        }
+      }
+      .mess_bot {
+        margin-top: 50/37.5rem;
+        width: 183/37.5rem;
+        height: 86/37.5rem;
+        padding: 8/37.5rem 10/37.5rem 5/37.5rem 15/37.5rem;
+        color: #fff;
+        font-size: 12/37.5rem;
+        background: url("../images/draFes/rectangle.png") no-repeat center;
+        background-size: cover;
+      }
+      .theme_rice {
+        position: absolute;
+        right: 0;
+        bottom: 20/37.5rem;
+        width: 237/37.5rem;
+      }
+    }
+    //第五屏 用户信息
+    .dra_user {
+      width: 100%;
+      height: 100%;
+      background-size: 100% 100%;
+      padding: 35/37.5rem 15/37.5rem 20/37.5rem;
+      .mess_title {
+        margin-bottom: 15/37.5rem;
+        font-size: 16/37.5rem;
+        color: #333;
+        line-height: 40/37.5rem;
+        background: url("../images/icon/tit1.png") no-repeat left center;
+        background-size: 25/37.5rem 25/37.5rem;
+        padding-left: 40/37.5rem;
+      }
+      //宝宝信息填写
+      .mess_list {
+        background: #fff;
+        border-radius: 8/37.5rem;
+        padding: 20/37.5rem 15/37.5rem 50/37.5rem;
+        .baby_name {
+          position: relative;
+          padding-top: 30/37.5rem;
+          padding-bottom: 11/37.5rem;
+          border-bottom: 1px solid #e6e6e6;
+          .baby_input {
+            display: block;
+            width: 70%;
+            height: 32/37.5rem;
+            line-height: 32/37.5rem;
+            color: #333;
+            font-size: 14/37.5rem;
+          }
+          .baby_la {
+            height: 32/37.5rem;
+            line-height: 32/37.5rem;
+            color: #333;
+            font-size: 14/37.5rem;
+          }
+          .obtain_code {
+            display: block;
+            color: #fff;
+            width: 95/37.5rem;
+            height: 32/37.5rem;
+            line-height: 32/37.5rem;
+            text-align: center;
+            font-size: 12/37.5rem;
+            background-color: #0099FF;
+            -webkit-border-radius: 3/37.5rem;
+            -moz-border-radius: 3/37.5rem;
+            -ms-border-radius: 3/37.5rem;
+            -o-border-radius: 3/37.5rem;
+            border-radius: 3/37.5rem;
+            position: absolute;
+            right: 0;
+            bottom: 14/37.5rem;
+          }
+        }
+        ::-webkit-input-placeholder {
+          color: #999999;
+          font-size: 14/37.5rem;
+        }
+        ::-moz-placeholder {
+          color: #999999;
+          font-size: 14/37.5rem;
+        }
+        :-ms-input-placeholder {
+          color: #999999;
+          font-size: 14/37.5rem;
+        }
+        input:-moz-placeholder {
+          color: #999999;
+          font-size: 14/37.5rem;
+        }
+        .cord_error {
+          font-size:12/37.5rem;
+          color:rgba(255,19,19,1);
+          line-height:17/37.5rem;
+          text-align: right;
+          padding-top: 7/37.5rem;
+        }
+        .sub_btn {
+          display: block;
+          width: 100%;
+          height: 50/37.5rem;
+          line-height: 50/37.5rem;
+          color: #999999;
+          font-size: 16/37.5rem;
+          text-align: center;
+          background-color: #F3F3F3;
+          -webkit-border-radius: 50/37.5rem 50/37.5rem;
+          -moz-border-radius: 50/37.5rem 50/37.5rem;
+          -ms-border-radius: 50/37.5rem 50/37.5rem;
+          -o-border-radius: 50/37.5rem 50/37.5rem;
+          border-radius: 50/37.5rem 50/37.5rem;
+          margin: 15/37.5rem auto 0;
+        }
+      }
+    }
+    //第六屏
+    .dra_success {
+      width: 100%;
+      height: 100%;
+      background-size: 100% 100%;
+      position: relative;
+      //第三屏的第二个竹子
+      .bam_thr {
+        width: 55/37.5rem;
+        position: absolute;
+        left: 0;
+        top: 55/37.5rem;
+      }
+      .suc_img {
+        display: block;
+        width: 251/37.5rem;
+        margin: 172/37.5rem auto 6/37.5rem;
+      }
+      .suc_text {
+        margin: 0 auto 25/37.5rem;
+        width: 254/37.5rem;
+        height: 28/37.5rem;
+        text-align: center;
+        font-size: 13/37.5rem;
+        color: #76661F;
+        padding: 6/37.5rem 0 4/37.5rem;
+        //background: url("../images/draFes/back_suc.png") no-repeat center;
+        //background-size: cover;
+      }
+      //粽子
+      .loosuc_img {
+        display: block;
+        width: 254/37.5rem;
+        margin: 0 auto;
+      }
+      .ship_img {
+        width: 245/37.5rem;
+        position: absolute;
+        bottom: 30/37.5rem;
+        right: 55/37.5rem;
+        z-index: 5;
+      }
+      .footer_six {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+  //小鬼当家
+  .alitghost_page {
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    //第一屏  首页
+    .alitghost_home {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-size: 100% 100%;
+      position: relative;
+      //顶部的五彩起
+      .render {
+        display: block;
+        width: 100%;
+        margin-top: -30/37.5rem;
+      }
+      //你家中有闲置不用的物品么 文本图片
+      .title_one {
+        display: block;
+        width: 292/37.5rem;
+        margin: 5/37.5rem auto 10/37.5rem;
+      }
+      //变废为宝 还能表现爱心 文本图片
+      .tiele_text {
+        display: block;
+        width: 160/37.5rem;
+        margin: 0 auto;
+      }
+      //主题图
+      .theme_ghost {
+        position: absolute;
+        left: 0;
+        bottom: -20/37.5rem;
+        width: 100%;
+      }
+      //龙舟
+      .title_textf {
+        position: absolute;
+        z-index: 2;
+        left: 50%;
+        bottom: 32/37.5rem;
+        width: 252/37.5rem;
+        margin-left: -126/37.5rem;
+      }
+    }
+    //第二屏
+    .alitghost_invi {
+      width: 100%;
+      height: 100%;
+      background-size: 100% 100%;
+      position: relative;
+      .logo_render {
+        display: block;
+        width: 57/37.5rem;
+        height: 57/37.5rem;
+        margin: 30/37.5rem auto 0;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%;
+        border: 2/37.5rem solid #fff;
+      }
+      //幼儿园名称
+      .invi_title {
+        padding: 15/37.5rem 38/37.5rem 5/37.5rem;
+        p {
+          text-align: center;
+          font-size: 20/37.5rem;
+          line-height: 28/37.5rem;
+          color: #FF4539;
+        }
+      }
+      // 邀您参加免费亲子体验活动
+      .invi_txt {
+        text-align: center;
+        font-size: 14/37.5rem;
+        line-height: 20/37.5rem;
+        color: #FF4539;
+        padding-bottom: 8/37.5rem;
+      }
+      //主题的标题位置
+      .theme_title {
+        width: 100%;
+        .title_left {
+          display: block;
+          margin: 0 auto 5/37.5rem;
+          width: 251/37.5rem;
+        }
+        .title_right {
+          display: block;
+          margin: 0 auto;
+          width: 270/37.5rem;
+        }
+      }
+      //主题图
+      .theme_img {
+        position: absolute;
+        bottom: 75/37.5rem;
+        left: 50%;
+        display: block;
+        width: 280/37.5rem;
+        margin-left: -140/37.5rem;
+      }
+    }
+    //第三屏
+    .alitghost_intr {
+      width: 100%;
+      height: 100%;
+      background-size: 100% 100%;
+      position: relative;
+      //文本
+      .intr_text {
+        width: 269/37.5rem;
+        height: 390/37.5rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        margin: 0 auto;
+        padding: 70/37.5rem 17/37.5rem 0;
+        position: relative;
+        z-index: 4;
+        .lovelist_img {
+          display: block;
+          width: 100%;
+          margin: 0 auto 5/37.5rem;
+        }
+        p {
+          font-size: 14/37.5rem;
+          color: #FFFFFF;
+          line-height: 22/37.5rem;
+          margin-bottom: 10/37.5rem;
+        }
+        .p_back {
+          background-position: left 6/37.5rem;
+          background-repeat: no-repeat;
+          background-size: 11/37.5rem 10/37.5rem;
+          text-indent: 20/37.5rem;
+        }
+      }
+      .footer_ghost {
+        width: 100%;
+        position: absolute;
+        bottom: -10/37.5rem;
+      }
+    }
+    //第四屏活动信息
+    .alitghost_mess {
+      width: 100%;
+      height: 100%;
+      background-size: 100% 100%;
+      padding: 35/37.5rem 15/37.5rem 20/37.5rem;
+      .mess_title {
+        margin-bottom: 15/37.5rem;
+        font-size: 16/37.5rem;
+        color: #333;
+        line-height: 40/37.5rem;
+        background: url("../images/icon/tit.png") no-repeat left center;
+        background-size: 25/37.5rem 25/37.5rem;
+        padding-left: 35/37.5rem;
+      }
+      .mess_list {
+        width: 100%;
+        li {
+          width: 100%;
+          background: #FFF;
+          -webkit-border-radius: 8/37.5rem;
+          -moz-border-radius: 8/37.5rem;
+          -ms-border-radius: 8/37.5rem;
+          -o-border-radius: 8/37.5rem;
+          border-radius: 8/37.5rem;
+          margin-bottom: 8/37.5rem;
+          //时间的图标
+          .list {
+            width: 100%;
+            padding: 15/37.5rem 15/37.5rem 5/37.5rem;
+            .timeimg {
+              width: 16/37.5rem;
+              height: 16/37.5rem;
+              margin-top: 4/37.5rem;
+            }
+            .mess_time {
+              font-size: 14/37.5rem;
+              color: #333333;
+              position: relative;
+              z-index: 555;
+              line-height: 25/37.5rem;
+              padding-left: 10/37.5rem;
+            }
+            //地点的图标
+            .mess_address {
+              width: 16/37.5rem;
+              height: 16/37.5rem;
+              margin-top: 4/37.5rem;
+            }
+          }
+          .time_num {
+            font-size: 12/37.5rem;
+            line-height: 20/37.5rem;
+            color: #333;
+            padding: 0 15/37.5rem 15/37.5rem 40/37.5rem;
+          }
+        }
+      }
+      .mess_bot {
+        margin-top: 30/37.5rem;
+        width: 183/37.5rem;
+        height: 86/37.5rem;
+        padding: 8/37.5rem 10/37.5rem 5/37.5rem 15/37.5rem;
+        color: #fff;
+        font-size: 12/37.5rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+      .theme_rice {
+        position: absolute;
+        right: 29/37.5rem;
+        bottom: 100/37.5rem;
+        width: 125/37.5rem;
+      }
+    }
+    //第五屏 用户信息
+    .alitghost_user {
+      width: 100%;
+      height: 100%;
+      background-size: 100% 100%;
+      padding: 35/37.5rem 15/37.5rem 20/37.5rem;
+      .mess_title {
+        margin-bottom: 15/37.5rem;
+        font-size: 16/37.5rem;
+        color: #333;
+        line-height: 40/37.5rem;
+        background: url("../images/icon/tit1.png") no-repeat left center;
+        background-size: 25/37.5rem 25/37.5rem;
+        padding-left: 40/37.5rem;
+      }
+      //宝宝信息填写
+      .mess_list {
+        background: #fff;
+        border-radius: 8/37.5rem;
+        padding: 20/37.5rem 15/37.5rem 50/37.5rem;
+        .baby_name {
+          position: relative;
+          padding-top: 30/37.5rem;
+          padding-bottom: 11/37.5rem;
+          border-bottom: 1px solid #e6e6e6;
+          .baby_input {
+            display: block;
+            width: 70%;
+            height: 32/37.5rem;
+            line-height: 32/37.5rem;
+            color: #333;
+            font-size: 14/37.5rem;
+          }
+          .baby_la {
+            height: 32/37.5rem;
+            line-height: 32/37.5rem;
+            color: #333;
+            font-size: 14/37.5rem;
+          }
+          .obtain_code {
+            display: block;
+            color: #fff;
+            width: 95/37.5rem;
+            height: 32/37.5rem;
+            line-height: 32/37.5rem;
+            text-align: center;
+            font-size: 12/37.5rem;
+            background-color: #0099FF;
+            -webkit-border-radius: 3/37.5rem;
+            -moz-border-radius: 3/37.5rem;
+            -ms-border-radius: 3/37.5rem;
+            -o-border-radius: 3/37.5rem;
+            border-radius: 3/37.5rem;
+            position: absolute;
+            right: 0;
+            bottom: 14/37.5rem;
+          }
+        }
+        ::-webkit-input-placeholder {
+          color: #999999;
+          font-size: 14/37.5rem;
+        }
+        ::-moz-placeholder {
+          color: #999999;
+          font-size: 14/37.5rem;
+        }
+        :-ms-input-placeholder {
+          color: #999999;
+          font-size: 14/37.5rem;
+        }
+        input:-moz-placeholder {
+          color: #999999;
+          font-size: 14/37.5rem;
+        }
+        .cord_error {
+          font-size:12/37.5rem;
+          color:rgba(255,19,19,1);
+          line-height:17/37.5rem;
+          text-align: right;
+          padding-top: 7/37.5rem;
+        }
+        .sub_btn {
+          display: block;
+          width: 100%;
+          height: 50/37.5rem;
+          line-height: 50/37.5rem;
+          color: #999999;
+          font-size: 16/37.5rem;
+          text-align: center;
+          background-color: #F3F3F3;
+          -webkit-border-radius: 50/37.5rem 50/37.5rem;
+          -moz-border-radius: 50/37.5rem 50/37.5rem;
+          -ms-border-radius: 50/37.5rem 50/37.5rem;
+          -o-border-radius: 50/37.5rem 50/37.5rem;
+          border-radius: 50/37.5rem 50/37.5rem;
+          margin: 15/37.5rem auto 0;
+        }
+      }
+    }
+    //第六屏
+    .alitghost_success {
+      width: 100%;
+      height: 100%;
+      background-size: 100% 100%;
+      position: relative;
+      .suc_img {
+        display: block;
+        width: 277/37.5rem;
+        margin: 110/37.5rem auto 6/37.5rem;
+      }
+      .suc_text {
+        margin: 0 auto 33/37.5rem;
+        width: 254/37.5rem;
+        height: 28/37.5rem;
+        text-align: center;
+        font-size: 13/37.5rem;
+        color: #FFFFFF;
+        padding: 6/37.5rem 0 4/37.5rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+      //6屏的主题
+      .loosuc_img {
+        display: block;
+        position: absolute;
+        bottom: 18/37.5rem;
+        width: 100%;
+        height: 378/37.5rem;
+        z-index: 6;
+      }
+      .footer_six {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+}
+
+
+//360度旋转
+@-webkit-keyframes rotating {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(1turn);
+    -moz-transform: rotate(1turn);
+    -ms-transform: rotate(1turn);
+    -o-transform: rotate(1turn);
+    transform: rotate(1turn);
+  }
+}
+@-moz-keyframes rotating {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(1turn);
+    -moz-transform: rotate(1turn);
+    -ms-transform: rotate(1turn);
+    -o-transform: rotate(1turn);
+    transform: rotate(1turn);
+  }
+}
+@-ms-keyframes rotating {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(1turn);
+    -moz-transform: rotate(1turn);
+    -ms-transform: rotate(1turn);
+    -o-transform: rotate(1turn);
+    transform: rotate(1turn);
+  }
+}
+@-o-keyframes rotating {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(1turn);
+    -moz-transform: rotate(1turn);
+    -ms-transform: rotate(1turn);
+    -o-transform: rotate(1turn);
+    transform: rotate(1turn);
+  }
+}
+@keyframes rotating {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(1turn);
+    -moz-transform: rotate(1turn);
+    -ms-transform: rotate(1turn);
+    -o-transform: rotate(1turn);
+    transform: rotate(1turn);
+  }
+}
+
+
+//上面的箭头动画
+@-webkit-keyframes arrow_b {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0, 0px) rotate(-135deg);
+    -moz-transform: translate(0, 0px) rotate(-135deg);
+    -ms-transform: translate(0, 0px) rotate(-135deg);
+    -o-transform: translate(0, 0px) rotate(-135deg);
+    transform: translate(0, 0px) rotate(-135deg);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate(0, 5px) rotate(-135deg);
+    -moz-transform: translate(0, 5px) rotate(-135deg);
+    -ms-transform: translate(0, 5px) rotate(-135deg);
+    -o-transform: translate(0, 5px) rotate(-135deg);
+    transform: translate(0, 5px) rotate(-135deg);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(0, 10px) rotate(-135deg);
+    -moz-transform: translate(0, 10px) rotate(-135deg);
+    -ms-transform: translate(0, 10px) rotate(-135deg);
+    -o-transform: translate(0, 10px) rotate(-135deg);
+    transform: translate(0, 10px) rotate(-135deg);
+  }
+}
+
+@-moz-keyframes arrow_b {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0, 0px) rotate(-135deg);
+    -moz-transform: translate(0, 0px) rotate(-135deg);
+    -ms-transform: translate(0, 0px) rotate(-135deg);
+    -o-transform: translate(0, 0px) rotate(-135deg);
+    transform: translate(0, 0px) rotate(-135deg);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate(0, 5px) rotate(-135deg);
+    -moz-transform: translate(0, 5px) rotate(-135deg);
+    -ms-transform: translate(0, 5px) rotate(-135deg);
+    -o-transform: translate(0, 5px) rotate(-135deg);
+    transform: translate(0, 5px) rotate(-135deg);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(0, 10px) rotate(-135deg);
+    -moz-transform: translate(0, 10px) rotate(-135deg);
+    -ms-transform: translate(0, 10px) rotate(-135deg);
+    -o-transform: translate(0, 10px) rotate(-135deg);
+    transform: translate(0, 10px) rotate(-135deg);
+  }
+}
+
+@-ms-keyframes arrow_b {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0, 0px) rotate(-135deg);
+    -moz-transform: translate(0, 0px) rotate(-135deg);
+    -ms-transform: translate(0, 0px) rotate(-135deg);
+    -o-transform: translate(0, 0px) rotate(-135deg);
+    transform: translate(0, 0px) rotate(-135deg);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate(0, 5px) rotate(-135deg);
+    -moz-transform: translate(0, 5px) rotate(-135deg);
+    -ms-transform: translate(0, 5px) rotate(-135deg);
+    -o-transform: translate(0, 5px) rotate(-135deg);
+    transform: translate(0, 5px) rotate(-135deg);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(0, 10px) rotate(-135deg);
+    -moz-transform: translate(0, 10px) rotate(-135deg);
+    -ms-transform: translate(0, 10px) rotate(-135deg);
+    -o-transform: translate(0, 10px) rotate(-135deg);
+    transform: translate(0, 10px) rotate(-135deg);
+  }
+}
+
+@-o-keyframes arrow_b {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0, 0px) rotate(-135deg);
+    -moz-transform: translate(0, 0px) rotate(-135deg);
+    -ms-transform: translate(0, 0px) rotate(-135deg);
+    -o-transform: translate(0, 0px) rotate(-135deg);
+    transform: translate(0, 0px) rotate(-135deg);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate(0, 5px) rotate(-135deg);
+    -moz-transform: translate(0, 5px) rotate(-135deg);
+    -ms-transform: translate(0, 5px) rotate(-135deg);
+    -o-transform: translate(0, 5px) rotate(-135deg);
+    transform: translate(0, 5px) rotate(-135deg);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(0, 10px) rotate(-135deg);
+    -moz-transform: translate(0, 10px) rotate(-135deg);
+    -ms-transform: translate(0, 10px) rotate(-135deg);
+    -o-transform: translate(0, 10px) rotate(-135deg);
+    transform: translate(0, 10px) rotate(-135deg);
+  }
+}
+
+@keyframes arrow_b {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0, 0px) rotate(-135deg);
+    -moz-transform: translate(0, 0px) rotate(-135deg);
+    -ms-transform: translate(0, 0px) rotate(-135deg);
+    -o-transform: translate(0, 0px) rotate(-135deg);
+    transform: translate(0, 0px) rotate(-135deg);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate(0, 5px) rotate(-135deg);
+    -moz-transform: translate(0, 5px) rotate(-135deg);
+    -ms-transform: translate(0, 5px) rotate(-135deg);
+    -o-transform: translate(0, 5px) rotate(-135deg);
+    transform: translate(0, 5px) rotate(-135deg);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(0, 10px) rotate(-135deg);
+    -moz-transform: translate(0, 10px) rotate(-135deg);
+    -ms-transform: translate(0, 10px) rotate(-135deg);
+    -o-transform: translate(0, 10px) rotate(-135deg);
+    transform: translate(0, 10px) rotate(-135deg);
+  }
+}
+
+//移动端下面的箭头动画
+@-webkit-keyframes arrow_t {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0, 0px) rotate(45deg);
+    -moz-transform: translate(0, 0px) rotate(45deg);
+    -ms-transform: translate(0, 0px) rotate(45deg);
+    -o-transform: translate(0, 0px) rotate(45deg);
+    transform: translate(0, 0px) rotate(45deg);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate(0, -5px) rotate(45deg);
+    -moz-transform: translate(0, -5px) rotate(45deg);
+    -ms-transform: translate(0, -5px) rotate(45deg);
+    -o-transform: translate(0, -5px) rotate(45deg);
+    transform: translate(0, -5px) rotate(45deg);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(0, 10px) rotate(45deg);
+    -moz-transform: translate(0, 10px) rotate(45deg);
+    -ms-transform: translate(0, 10px) rotate(45deg);
+    -o-transform: translate(0, 10px) rotate(45deg);
+    transform: translate(0, 10px) rotate(45deg);
+  }
+}
+
+@-moz-keyframes arrow_t {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0, 0px) rotate(45deg);
+    -moz-transform: translate(0, 0px) rotate(45deg);
+    -ms-transform: translate(0, 0px) rotate(45deg);
+    -o-transform: translate(0, 0px) rotate(45deg);
+    transform: translate(0, 0px) rotate(45deg);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate(0, -5px) rotate(45deg);
+    -moz-transform: translate(0, -5px) rotate(45deg);
+    -ms-transform: translate(0, -5px) rotate(45deg);
+    -o-transform: translate(0, -5px) rotate(45deg);
+    transform: translate(0, -5px) rotate(45deg);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(0, 10px) rotate(45deg);
+    -moz-transform: translate(0, 10px) rotate(45deg);
+    -ms-transform: translate(0, 10px) rotate(45deg);
+    -o-transform: translate(0, 10px) rotate(45deg);
+    transform: translate(0, 10px) rotate(45deg);
+  }
+}
+
+@-ms-keyframes arrow_t {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0, 0px) rotate(45deg);
+    -moz-transform: translate(0, 0px) rotate(45deg);
+    -ms-transform: translate(0, 0px) rotate(45deg);
+    -o-transform: translate(0, 0px) rotate(45deg);
+    transform: translate(0, 0px) rotate(45deg);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate(0, -5px) rotate(45deg);
+    -moz-transform: translate(0, -5px) rotate(45deg);
+    -ms-transform: translate(0, -5px) rotate(45deg);
+    -o-transform: translate(0, -5px) rotate(45deg);
+    transform: translate(0, -5px) rotate(45deg);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(0, 10px) rotate(45deg);
+    -moz-transform: translate(0, 10px) rotate(45deg);
+    -ms-transform: translate(0, 10px) rotate(45deg);
+    -o-transform: translate(0, 10px) rotate(45deg);
+    transform: translate(0, 10px) rotate(45deg);
+  }
+}
+
+@-o-keyframes arrow_t {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0, 0px) rotate(45deg);
+    -moz-transform: translate(0, 0px) rotate(45deg);
+    -ms-transform: translate(0, 0px) rotate(45deg);
+    -o-transform: translate(0, 0px) rotate(45deg);
+    transform: translate(0, 0px) rotate(45deg);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate(0, -5px) rotate(45deg);
+    -moz-transform: translate(0, -5px) rotate(45deg);
+    -ms-transform: translate(0, -5px) rotate(45deg);
+    -o-transform: translate(0, -5px) rotate(45deg);
+    transform: translate(0, -5px) rotate(45deg);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(0, 10px) rotate(45deg);
+    -moz-transform: translate(0, 10px) rotate(45deg);
+    -ms-transform: translate(0, 10px) rotate(45deg);
+    -o-transform: translate(0, 10px) rotate(45deg);
+    transform: translate(0, 10px) rotate(45deg);
+  }
+}
+
+@keyframes arrow_t {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0, 0px) rotate(45deg);
+    -moz-transform: translate(0, 0px) rotate(45deg);
+    -ms-transform: translate(0, 0px) rotate(45deg);
+    -o-transform: translate(0, 0px) rotate(45deg);
+    transform: translate(0, 0px) rotate(45deg);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate(0, -5px) rotate(45deg);
+    -moz-transform: translate(0, -5px) rotate(45deg);
+    -ms-transform: translate(0, -5px) rotate(45deg);
+    -o-transform: translate(0, -5px) rotate(45deg);
+    transform: translate(0, -5px) rotate(45deg);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(0, 10px) rotate(45deg);
+    -moz-transform: translate(0, 10px) rotate(45deg);
+    -ms-transform: translate(0, 10px) rotate(45deg);
+    -o-transform: translate(0, 10px) rotate(45deg);
+    transform: translate(0, 10px) rotate(45deg);
+  }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--忽略页面中的邮箱格式为邮箱-->
+    <meta name="format-detection" content="email=no">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <title>支付页面</title>
+    <link rel="stylesheet" href="../css/index_wx.css">
+    <script src="../js/jquery-2.1.1.min.js"></script>
+</head>
+<body style="font-family: myFont;background-color: #F3F3F3">
+<div class="warp_wx">
+    <div class="pay_page">
+        <div class="intr_mess clearfix">
+            <img src="../images/home/fair_1.png" alt="" class="modu_img fl">
+            <div class="mess_txt fl">
+                <h3 class="rec_title">好玩的喷刷画好玩的喷刷画好玩的喷刷画好玩的喷刷画</h3>
+                <label class="activi_text">入园体验</label>
+                <p class="activ_text">活动标签：<span>认知体验活动</span></p>
+                <p class="activ_txt">适合特色：<span>绘本特色园所</span></p>
+                <p class="moeny_text">￥19.9</p>
+                <div class="clearfix" style="display: none">
+                    <p class="moeny_del fl"><del>￥19.9</del></p>
+                    <a href="#" class="fr free_text">免费试用</a>
+                </div>
+            </div>
+        </div>
+        <div class="pay_list">
+            <ul class="pay_ul">
+                <li>
+                    <p class="pay_text">活动宣品制作工具</p>
+                </li>
+                <li>
+                    <p class="pay_text">活动宣品方案文案</p>
+                </li>
+                <li>
+                    <p class="pay_text">现场签到海报设计图</p>
+                </li>
+                <li>
+                    <p class="pay_text">活动预约名单统计</p>
+                </li>
+                <li class="no_bor">
+                    <p class="pay_text">活动现场签到工具</p>
+                </li>
+            </ul>
+        </div>
+        <footer class="pay_btn">
+            <ul class="pay_btnul clearfix">
+                <li class="pay_num">
+                    <a href="javascript:void (0);">￥99元/份</a>
+                </li>
+                <li class="pay_text">
+                    <a href="javascript:void (0);">立即支付</a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+</div>
+</body>
+<script>
+    $(function() {
+        var newStyle = $("<style> @font-face {font-family: 'myFont';  src: url('../fonts/HYQiHei-50S.ttf');} </style>");
+        $('body').append(newStyle);
+    });
+</script>
+</html>

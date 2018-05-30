@@ -1,0 +1,150 @@
+@import "base_mob.css";
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+html {
+  overflow: hidden;
+}
+.coverLayer {
+  display: none;
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.coverLayer .layerText {
+  text-align: center;
+  padding: 3rem 0 1rem;
+  font-size: 0.44rem;
+  color: #fff;
+}
+@keyframes moveToLeft {
+  to {
+    -webkit-transform: translateX(-100%);
+    transform: translateY(-100%);
+    transform: translateX(-100%);
+  }
+}
+.coverLayer .layerImg {
+  display: block;
+  width: 30%;
+  margin-left: 5rem;
+  animation: moveToLeft ease-in-out 1.5s infinite alternate;
+}
+.coverLayer .layerBtn {
+  width: 50%;
+  padding: 0.2rem 0;
+  margin: 3rem auto 0.4rem;
+  text-align: center;
+  max-width: 540px;
+  -webkit-border-radius: 0.13333333rem;
+  -moz-border-radius: 0.13333333rem;
+  -ms-border-radius: 0.13333333rem;
+  border-radius: 0.13333333rem;
+  border: 0.02666667rem solid #ffffff;
+}
+.coverLayer .layerBtn a {
+  color: #fff;
+  font-size: 0.4rem;
+}
+#top {
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  width: 100%;
+  background: #fff;
+  transform: translateY(0) !important;
+}
+#nav {
+  border-bottom: 1px solid #ebebeb;
+}
+#nav .swiper-slide span {
+  margin: 0.4rem 0;
+  text-align: center;
+  display: block;
+  line-height: 0.53333333rem;
+  font-size: 0.37333333rem;
+  color: #999999;
+}
+#nav .bar {
+  width: 0.96rem;
+  height: 0.08rem;
+  position: absolute;
+  bottom: 0px;
+}
+#nav .bar .color {
+  width: 0.96rem;
+  height: 0.08rem;
+  margin: 0 auto;
+  background: #ff530b;
+}
+#page {
+  margin-bottom: 1.33333333rem;
+  height: 100%;
+}
+#page .slidepage {
+  height: 100%;
+}
+.scroll {
+  height: 100%;
+}
+.slidepage .guid_li {
+  padding: 0 0.53333333rem 0.53333333rem !important;
+}
+.slidepage .guid_li .line_sp {
+  width: 0.05333333rem;
+  height: 0.32rem;
+  margin-top: 0.08rem;
+  background-color: #FF530B;
+}
+.slidepage .guid_li .title_h {
+  font-size: 0.38rem;
+  color: #333;
+  padding-left: 0.16rem;
+  font-weight: 800;
+}
+.slidepage .guid_li .intr_text {
+  padding-left: 0.21333333rem;
+}
+.slidepage .guid_li .intr_text p {
+  font-size: 0.36rem;
+  line-height: 0.6rem;
+  color: #666;
+  padding: 0.4rem 0 0.8rem;
+}
+.slidepage .guid_li .intr_text .point {
+  font-size: 0.37333333rem;
+  line-height: 0.53333333rem;
+  color: #FF530B;
+  padding: 0rem 0 0.8rem;
+}
+.slidepage .guid_li .intr_text .point_text {
+  font-size: 0.37333333rem;
+  line-height: 0.53333333rem;
+  color: #FF530B;
+  padding: 0.4rem 0.4rem;
+  margin-top: -0.4rem;
+  margin-bottom: 0.8rem;
+  margin-left: -0.21333333rem;
+  background-color: #F3F3F3;
+  -webkit-border-radius: 0.21333333rem;
+  -moz-border-radius: 0.21333333rem;
+  -ms-border-radius: 0.21333333rem;
+  -o-border-radius: 0.21333333rem;
+  border-radius: 0.21333333rem;
+}
+.slidepage .guid_li .intr_text .line_span {
+  display: block;
+  width: 100%;
+  border-bottom: 0.02666667rem solid #dddddd;
+  margin-bottom: 0.8rem;
+}
+.slidescroll {
+  height: auto;
+}

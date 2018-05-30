@@ -1,0 +1,183 @@
+@import "base_mob.css";
+.warp_wx {
+  width: 100%;
+  height: 100%;
+  max-width: 14.4rem;
+  -webkit-overflow-scrolling: touch;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.warp_wx .reader_paper {
+  width: 100%;
+  padding: 0.53333333rem 0.4rem;
+  overflow: hidden;
+  background-color: #fff;
+}
+.warp_wx .reader_paper .reder_title {
+  padding-bottom: 0.21333333rem;
+  font-size: 0.64rem;
+  color: #333;
+}
+.warp_wx .reader_paper .tn_head_info {
+  font-size: 0.26666667rem;
+}
+.warp_wx .reader_paper .tn_head_info .time {
+  color: #6c6d6f;
+}
+.warp_wx .reader_paper .tn_head_info .hor_sep {
+  margin-left: 0.26666667rem;
+}
+.warp_wx .reader_paper .tn_head_info .brand {
+  color: #45bcda;
+}
+.warp_wx .reader_paper .container {
+  padding-bottom: 2.4rem;
+  background-color: #fff;
+}
+.warp_wx .reader_paper .line_bor {
+  display: block;
+  width: 100%;
+  border: 0.02666667rem dotted #eeeeee;
+  margin: 0.8rem 0;
+}
+.warp_wx .reader_paper .reader_content {
+  width: 100%;
+  height: auto;
+}
+.warp_wx .reader_paper .reader_content .schedule .textarea {
+  display: block;
+  width: 100%;
+  font-size: 0.37333333rem;
+  border: 0.02666667rem dotted #ffffff;
+  background-color: #fff;
+}
+.warp_wx .reader_paper .reader_content .schedule .textarea textarea {
+  width: 100%;
+  color: #0099FF;
+  border: 0.02666667rem dotted #ffffff;
+}
+.warp_wx .reader_paper .reader_content .schedule .file_img {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.warp_wx .reader_paper .reader_content .schedule .file_img .img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+  margin: 0 auto 0.4rem;
+}
+.warp_wx .reader_paper .reader_content .sche {
+  display: block !important;
+}
+.warp_wx .reader_paper .myschedule {
+  padding: 1.49333333rem 0 0;
+}
+.warp_wx .reader_paper .myschedule .textarea {
+  display: block;
+  width: 100%;
+  font-size: 0.37333333rem;
+  color: #333;
+  line-height: 0.74666667rem;
+  letter-spacing: 0.05333333rem;
+  border: 0.02666667rem dotted #ffffff;
+}
+.warp_wx .reader_paper .myschedule .textarea textarea {
+  width: 100%;
+  color: #0099FF;
+  border: 0.02666667rem dotted #ffffff;
+}
+.warp_wx .reader_paper .myschedule .rice_text {
+  font-size: 0.26666667rem;
+  color: #FF530B;
+  line-height: 0.37333333rem;
+  padding: 1.22666667rem 0 0.50666667rem;
+  letter-spacing: 0.05333333rem;
+}
+.warp_wx .reader_paper .myschedule .rice_num {
+  font-size: 0.8rem !important;
+  line-height: 1.12rem;
+  color: #FF530B;
+  text-align: center;
+  font-weight: 800;
+  padding: 0 !important;
+  letter-spacing: 0.05333333rem;
+}
+.warp_wx .reader_paper .myschedule .rice_tit {
+  font-size: 0.42666667rem;
+  line-height: 0.58666667rem;
+  color: #FF530B;
+  text-align: center;
+  letter-spacing: 0.05333333rem;
+}
+.warp_wx .reader_paper .myschedule .mar_bot {
+  margin-bottom: 0.4rem;
+}
+.warp_wx .reader_paper .myschedule .loo_text {
+  font-size: 0.37333333rem;
+  color: #FF530B;
+  line-height: 0.53333333rem;
+  text-align: center;
+  letter-spacing: 0.05333333rem;
+}
+.warp_wx .reader_paper .myschedule .file_img {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.warp_wx .reader_paper .myschedule .file_img .img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+  margin: 0 auto 0.4rem;
+}
+.warp_wx .reader_paper .myschedule .file_img .imgbor {
+  border: 0.21333333rem solid #ffffff;
+  -webkit-box-shadow: 0 0.32rem 0.66666667rem 0 rgba(218, 218, 218, 0.5);
+  -moz-box-shadow: 0 0.32rem 0.66666667rem 0 rgba(218, 218, 218, 0.5);
+  box-shadow: 0 0.32rem 0.66666667rem 0 rgba(218, 218, 218, 0.5);
+}
+.warp_wx .reader_paper .myschedule .file_img .imgclose {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0.53333333rem;
+  height: 0.53333333rem;
+}
+.warp_wx .reader_paper .myschedule .file_img:hover .imgclose {
+  display: block;
+}
+.warp_wx .reader_paper .cord_img {
+  padding-top: 0.4rem;
+  width: 100%;
+}
+.warp_wx .reader_paper .cord_img .cord_render {
+  display: block;
+  width: 4.10666667rem;
+  height: 4.10666667rem;
+  margin: 0 auto;
+  border: 0.21333333rem solid #ffffff;
+}
+.warp_wx .reader_paper .cord_img .cord_txt {
+  color: #333;
+  font-size: 0.29333333rem;
+  line-height: 0.42666667rem;
+  text-align: center;
+  letter-spacing: 0.05333333rem;
+}
+.warp_wx .reader_paper .text_foot {
+  width: 100%;
+  padding: 0.4rem 0;
+}
+.warp_wx .reader_paper .text_foot div {
+  font-size: 0.34666667rem;
+  color: #9c9d9f;
+}
+.warp_wx .reader_paper .text_foot div .decoration {
+  color: rgba(201, 94, 87, 0.6);
+}

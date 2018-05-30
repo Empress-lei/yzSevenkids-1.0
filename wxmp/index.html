@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--忽略页面中的邮箱格式为邮箱-->
+    <meta name="format-detection" content="email=no">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <title>慧招生移动端首页</title>
+    <link rel="stylesheet" href="./css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="./css/index_wx.css">
+    <script src="./js/jquery-2.1.1.min.js"></script>
+    <script src="./js/swiper-3.4.2.min.js"></script>
+    <script src="./js/wxswiper.js"></script>
+    <script src="./js/footer.js"></script>
+</head>
+<body style="font-family: myFont">
+<div class="warp_wx">
+    <div class="home_wx">
+        <!--banner轮播图-->
+        <div class="swiper-container hdBanner" id="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- banner内容 -->
+                <div class="swiper-slide">
+                    <img src="./images/home/homebanner.png" class="scroll_banner">
+                </div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-bullets">
+                <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+                <span class="swiper-pagination-bullet"></span>
+            </div>
+        </div>
+        <!--主推方向-->
+        <div class="main_div">
+            <ul class="main_core clearfix">
+                <li class="core_li">
+                    <img src="./images/home/render_icon.png" alt="" class="core_img">
+                    <p class="core_text">园所推广</p>
+                </li>
+                <li class="core_li">
+                    <img src="./images/home/conver_icon.png" alt="" class="core_img">
+                    <p class="core_text">活动转化</p>
+                </li>
+                <li class="core_li">
+                    <img src="./images/home/data_icon.png" alt="" class="core_img">
+                    <p class="core_text">数据推广</p>
+                </li>
+            </ul>
+        </div>
+        <!--导师介绍-->
+        <div class="teac_intr">
+            <div class="teac_tit clearfix">
+                <h3 class="fl tit_h3">导师推广</h3>
+                <a href="javascript:void (0);" class="fr tit_look">查看更多</a>
+            </div>
+            <div class="mess_div">
+                <div class="teac_list clearfix">
+                    <div class="yang_mess fl">
+                        <img src="./images/home/yang.png" alt="" class="teac_pro">
+                        <div class="mess_text">
+                            <h3>杨景郁</h3>
+                            <p>从事幼教领域19年教领域19…</p>
+                        </div>
+                    </div>
+                    <ul class="teac_mess fl">
+                        <li class="mess_li fl">
+                            <img src="./images/home/jia.png" alt="" class="teac_img">
+                            <div class="teac_text">
+                                <h3>刘嘉萌</h3>
+                                <p>从事幼教行业17年历任多家幼儿园园长、督导等职务</p>
+                            </div>
+                        </li>
+                        <li class="mess_li fl">
+                            <img src="./images/home/lei.png" alt="" class="teac_img">
+                            <div class="teac_text">
+                                <h3>刘蕾</h3>
+                                <p>从事幼教行业8年，曾指导100+所幼儿园开园工作</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--微课堂-->
+        <div class="micro_class">
+            <div class="teac_tit clearfix">
+                <h3 class="fl tit_h3">微课堂</h3>
+                <a href="javascript:void (0);" class="fr tit_look">查看更多</a>
+            </div>
+            <!--微课轮播图-->
+            <div class="myswiper class_ban">
+                <div class="swiper-wrapper">
+                    <!-- banner内容 -->
+                    <div class="swiper-slide">
+                        <img src="./images/home/video1.png" class="scroll_video">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/home/video2.png" class="scroll_video">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/home/video3.png" class="scroll_video">
+                    </div>
+                </div>
+                <div class="swiper-pagination swiper-pagination-bullets">
+                    <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+                    <span class="swiper-pagination-bullet"></span>
+                </div>
+            </div>
+            <div class="class_div">
+                <span></span>
+            </div>
+        </div>
+        <!--活动模板-->
+        <div class="modular_show">
+            <div class="teac_tit clearfix">
+                <h3 class="fl tit_h3">活动模版</h3>
+                <a href="javascript:void (0);" class="fr tit_look">查看更多</a>
+            </div>
+            <ul class="mudular-list clearfix">
+
+                <!--
+                    free_btn_la 免费
+                    buy_btn_la 购买
+                    buymo_btn_la 已购
+                -->
+                <li class="creat_li">
+                    <div class="x_div">
+                        <img src="./images/mo/胡椒小猪.png" alt="" class="x_img">
+                        <div class="x_con">
+                            <p class="con_p">亲子体验活动亲子体验活动</p>
+                            <div class="con_txt clearfix">
+                                <span class="free_btn_la">免费</span>
+                            </div>
+                        </div>
+                        <img src="./images/icon/new.png" alt="" class="new_img">
+                    </div>
+                </li>
+                <li class="creat_li">
+                    <div class="x_div">
+                        <img src="./images/home/fair_1.png" alt="" class="x_img">
+                        <div class="x_con">
+                            <p class="con_p">亲子体验活动亲子体验活动</p>
+                            <div class="con_txt clearfix">
+                                <span class="free_btn_la">免费</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="creat_li">
+                    <div class="x_div">
+                        <img src="./images/home/fair_1.png" alt="" class="x_img">
+                        <div class="x_con">
+                            <p class="con_p">亲子体验活动亲子体验活动</p>
+                            <div class="con_txt clearfix">
+                                <span class="moeny_num fl">¥99</span>
+                                <span class="buy_btn_la fr">购买</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="creat_li">
+                    <div class="x_div">
+                        <img src="./images/home/fair_1.png" alt="" class="x_img">
+                        <div class="x_con">
+                            <p class="con_p">亲子体验活动亲子体验活动</p>
+                            <div class="con_txt clearfix">
+                                <span class="buymo_btn_la">已购</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <p class="baseline">——— 我是底线 ———</p>
+    </div>
+    <footer class="footer">
+        <ul class="footer_nav clearfix">
+            <li class="nav_li">
+                <img src="./images/icon/home_icongra.png" alt="" class="nav_icon">
+                <p class="nav_text">首页</p>
+            </li>
+            <li class="nav_li">
+                <img src="./images/icon/acti_icongra.png" alt="" class="nav_icon">
+                <p class="nav_text">活动</p>
+            </li>
+            <li class="nav_li">
+                <img src="./images/icon/megra.png" alt="" class="nav_icon">
+                <p class="nav_text">我的</p>
+            </li>
+        </ul>
+    </footer>
+</div>
+</body>
+<script>
+    $(function() {
+        var newStyle = $("<style> @font-face {font-family: 'myFont';  src: url('./fonts/HYQiHei-50S.ttf');} </style>");
+        $('body').append(newStyle);
+    });
+</script>
+</html>

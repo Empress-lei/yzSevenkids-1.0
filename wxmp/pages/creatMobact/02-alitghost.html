@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--忽略页面中的邮箱格式为邮箱-->
+    <meta name="format-detection" content="email=no">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <title>移动端创建活动模板</title>
+    <link rel="stylesheet" href="../../css/activity_mobwx.css">
+    <link rel="stylesheet" href="../../css/modular.css">
+    <link rel="stylesheet" href="../../css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="../../css/animate.min.css">
+</head>
+<body style="font-family: myFont">
+<div class="datermine">
+    <p class="mine_text">
+        活动宣品信息确认无误后 <br>
+        点击【确定】按钮，就可分享邀约啦
+    </p>
+    <ul class="mine_ul clearfix">
+        <li>
+            <a href="javascript:void (0);" class="sure_btn">确定</a>
+        </li>
+        <li>
+            <a href="javascript:void (0);" class="sure_btn close_btn">关闭</a>
+        </li>
+    </ul>
+</div>
+<div class="warp_creat mobils_warp">
+    <!--背景色-->
+    <div class="myswiper-container creat_page alitghost_page" style="background-color: #fff;">
+        <audio style="display:none; height: 0" id="bg-music" preload="auto" src="../../music/动物园的小熊们.mp3" loop="loop"></audio>
+        <div class="playBtn play">
+            <img src="../../images/icon/music_play.png" alt="">
+        </div>
+        <!--返回按钮-->
+        <div class="sendBtn">
+            <img src="../../images/icon/send_icon.png" alt="">
+        </div>
+        <!--编辑按钮-->
+        <div class="editBtn">
+            <img src="../../images/icon/edit_img.png" alt="">
+        </div>
+        <div class="swiper-wrapper">
+            <!--第一屏  首页-->
+            <!--1、背景图-->
+            <div class="swiper-slide alitghost_home" style="background-image: url('../../../wxmou/images/alitghost/back1.png')">
+                <!--顶部的五彩起-->
+                <img src="../../../wxmou/images/alitghost/render1.png" alt="" class="render ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">
+                <!--你家中有闲置不用的物品么 文本图片-->
+                <img src="../../../wxmou/images/alitghost/title1.png" alt="" class="title_one ani" swiper-animate-effect="rotateInDownLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">
+                <!--变废为宝 还能表现爱心 文本图片-->
+                <img src="../../../wxmou/images/alitghost/tiele_text.png" alt="" class="tiele_text ani" swiper-animate-effect="rotateInUpRight" swiper-animate-duration="1s" swiper-animate-delay="1s">
+                <!--主题图-->
+                <img src="../../../wxmou/images/alitghost/theme1.png" alt="" class="theme_ghost ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1" swiper-animate-delay="2.2s">
+                <!--底部文字样式-->
+                <img src="../../../wxmou/images/alitghost/title_textf.png" alt="" class="title_textf ani" swiper-animate-effect="lightSpeedIn" swiper-animate-duration="1" swiper-animate-delay="2.5s">
+                <div class="arrow_b"></div>
+            </div>
+            <!--第二屏-->
+            <div class="swiper-slide alitghost_invi swiper-lazy" data-background="../../../wxmou/images/alitghost/back2.png">
+                <!--幼儿园logo-->
+                <img data-src="../../../wxmou/images/video_home.png" alt="" class="logo_render swiper-lazy">
+                <!--幼儿园名称-->
+                <div  id="kinder_name" class="invi_title ani" swiper-animate-effect="rotateInDownRight" swiper-animate-duration="1s" swiper-animate-delay="0.5s">
+                    <p>********************幼儿园</p>
+                </div>
+                <!--邀您参加免费亲子体验活动-->
+                <div class="invi_txt ani" swiper-animate-effect="slideInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.8s">
+                    <p>邀您参加免费亲子体验活动</p>
+                </div>
+                <!--主题的标题位置-->
+                <div class="theme_title">
+                    <img data-src="../../../wxmou/images/alitghost/title2.png" alt="" class="swiper-lazy title_left ani" swiper-animate-effect="slideInLeft" swiper-animate-duration="1s" swiper-animate-delay="1.1s">
+                    <img data-src="../../../wxmou/images/alitghost/title_text2.png" alt="" class="swiper-lazy title_right ani" swiper-animate-effect="slideInRight" swiper-animate-duration="1s" swiper-animate-delay="1.4s">
+                </div>
+                <!--主题图-->
+                <img data-src="../../../wxmou/images/alitghost/theme2.png" alt="" class="swiper-lazy theme_img ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="1.8s">
+            </div>
+            <!--第三屏   活动介绍-->
+            <!--1、背景图-->
+            <div class="swiper-slide alitghost_intr swiper-lazy" data-background="../../../wxmou/images/alitghost/back3.png">
+                <!--幼儿园名称-->
+                <div  class="intr_text" style="background-image: url('../../../wxmou/images/alitghost/redback.png')">
+                    <!--描述文本-->
+                    <img data-src="../../../wxmou/images/alitghost/lovelist.png" alt="" class="swiper-lazy lovelist_img ani" swiper-animate-effect="slideInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.5s">
+                    <p class="ani" swiper-animate-effect="slideInRight" swiper-animate-duration="1s" swiper-animate-delay="1s">
+                        爱心是一泓清泉，荡涤着世间的尘埃! 爱心是一缕阳光，扫除了心底的阴霾! 爱心是一股暖流，温暖了人们的心怀!
+                    </p>
+                    <p class="p_back ani" style="background-image: url('../../../wxmou/images/alitghost/love1.png')" swiper-animate-effect="slideInLeft" swiper-animate-duration="1s" swiper-animate-delay="1.3s">
+                        这一次的活动，我们将以爱心义卖的方式将获得的款项集合起来，在我们家长代表的监督下利用这些款项购买孩子们需要的生活学习用品，捐献给**机构的孩子们。
+                    </p>
+                    <p class="p_back ani" style="background-image: url('../../../wxmou/images/alitghost/love1.png')"  swiper-animate-effect="slideInRight" swiper-animate-duration="1s" swiper-animate-delay="1.5s">
+                        这今天每个小朋友都是买家也都是卖家，在这种买卖的过程中获得了角色的体验，同时也用实际的行动感受了付出爱的快乐。
+                    </p>
+                </div>
+                <!--footer-->
+                <img data-src="../../../wxmou/images/alitghost/footer3.png" alt="" class="swiper-lazy footer_ghost ani" swiper-animate-effect="fadeInUpBig" swiper-animate-duration="1" swiper-animate-delay="1.8s">
+            </div>
+            <!--第四屏  活动信息-->
+            <!--1、背景图-->
+            <div class="swiper-slide alitghost_mess swiper-lazy" data-background="../../../wxmou/images/alitghost/back4.png">
+                <!--2、标题位置点（内容：活动信息）  默认的字体颜色为白色，加class="mess_titleblack"，字体为黑色-->
+                <h3 class="mess_title">活动信息</h3>
+                <ul class="mess_list">
+                    <li>
+                        <div class="clearfix list ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.1s">
+                            <img data-src="../../../wxmou/images/icon/time.png" alt="" class="swiper-lazy timeimg fl">
+                            <h4 class="mess_time fl">时间</h4>
+                        </div>
+                        <div class="time_num clearfix ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.2s">
+                            <span id="year_num">2018-01-23 周二 上午 01:30:00</span>&nbsp;<span class="time_p" style="display:none">01:30</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="clearfix list ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.3s">
+                            <img data-src="../../../wxmou/images/icon/add.png" alt="" class="swiper-lazy mess_address fl">
+                            <h4 class="mess_time fl">地点</h4>
+                        </div>
+                        <div class="time_num address ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.4s">
+                            <span id="address">北京市 市辖区 海淀区</span>
+                            <span id="add_1">18号互联网教育创新中心B座</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="clearfix list ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.5s">
+                            <img data-src="../../../wxmou/images/icon/tell.png" alt="" class="swiper-lazy timeimg fl">
+                            <h4 class="mess_time fl">咨询电话</h4>
+                        </div>
+                        <p  id="tell_num" class="time_num ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.6s">010 - 12345678</p>
+                    </li>
+                </ul>
+                <!--3、导语的位置点（class="mess_bot"）  默认的字体颜色为白色，加class="mess_botblack"，字体为黑色-->
+                <div class="mess_bot ani" style="background-image: url('../../../wxmou/images/alitghost/rectangle.png');" swiper-animate-effect="slideInLeft" swiper-animate-duration="0.8s" swiper-animate-delay="0.4s">
+                    如果宝宝的年龄在2—3岁，<br>
+                    那赶紧报名吧！<br>
+                    只限20组家庭，手慢无！<br>
+                    报名后，老师会跟你联系哦！
+                </div>
+                <!--第四屏主题图-->
+                <img data-src="../../../wxmou/images/alitghost/children4.png" alt="" class="swiper-lazy theme_rice ani" swiper-animate-effect="fadeInRightBig" swiper-animate-duration="1" swiper-animate-delay="0.4s">
+            </div>
+            <!--第五屏 用户信息-->
+            <!--1、背景图-->
+            <div class="swiper-slide alitghost_user swiper-lazy" data-background="../../../wxmou/images/alitghost/back5.png">
+                <!--2、标题位置点（内容： 填写信息） 默认的字体颜色为白色，加class="mess_titleblack"，字体为黑色-->
+                <h3 class="mess_title">填写信息</h3>
+                <ul class="mess_list">
+                    <li class="baby_name clearfix ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.2s">
+                        <label class="fl baby_la">宝宝姓名：</label><input type="text" class="baby_input fl" placeholder="请输入宝宝名称" readonly="readonly">
+                    </li>
+                    <li class="baby_name clearfix ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.3s" id="messDate">
+                        <label class="fl baby_la">出生日期：</label><input type="tel" placeholder="请输入出生日期"  readonly="readonly"  class="baby_input fl" id="date1">
+                    </li>
+                    <li class="baby_name clearfix ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.4s">
+                        <label class="fl baby_la">联系电话：</label>
+                        <input type="tel" class="baby_input fl"  placeholder="请输入联系电话"  id="j_phone"  readonly="readonly">
+                        <a href="javascript:void (0)" class="obtain_code" id="j_getVerifyCode">获取验证码</a>
+                    </li>
+                    <li class="baby_name clearfix ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.5s">
+                        <label class="fl baby_la">验证码：</label><input type="tel" placeholder="请输入手机验证码" class="baby_input fl"  readonly="readonly">
+                    </li>
+                    <p class="cord_error">短信验证码输入错误</p>
+                    <a href="#" class="sub_btn ani" swiper-animate-effect="bounceInUp" swiper-animate-duration="0.8s" swiper-animate-delay="0.7s">提交</a>
+                </ul>
+                <div class="arrow_t"></div>
+            </div>
+        </div>
+
+        <footer class="footer_activ slide_footer">
+            <!--创建活动底部(只有活动介绍和购买按钮)-->
+            <ul class="footer_ul clearfix">
+                <li class="silde_nav intr_nav">
+                    <a href="javascript:void (0);">活动介绍</a>
+                </li>
+                <li class="silde_nav buy_nav">
+                    <a href="javascript:void (0);">购买</a>
+                </li>
+                <!--<li class="silde_nav free_nav">-->
+                    <!--<a href="javascript:void (0);">免费试用</a>-->
+                <!--</li>-->
+            </ul>
+            <!--//创建活动底部(指导方案 、 预览 、发送)-->
+            <!--<ul class="pro_ul clearfix">-->
+                <!--<li class="silde_nav pro_nav">-->
+                    <!--<a href="javascript:void (0);">指导方案</a>-->
+                <!--</li>-->
+                <!--<li class="silde_nav prew_nav">-->
+                    <!--<a href="javascript:void (0);">预览</a>-->
+                <!--</li>-->
+                <!--<li class="silde_nav send_nav send_btn">-->
+                    <!--<a href="javascript:void (0);">发送</a>-->
+                <!--</li>-->
+            <!--</ul>-->
+            <!--<ul class="creat_ul clearfix">-->
+                <!--<li class="silde_nav intr_nav">-->
+                    <!--<a href="javascript:void (0);">活动介绍</a>-->
+                <!--</li>-->
+                <!--<li class="silde_nav creat_nav">-->
+                    <!--<a href="javascript:void (0);">创建宣品</a>-->
+                <!--</li>-->
+            <!--</ul>-->
+        </footer>
+    </div>
+    <div class="activity_intr">
+        <div class="arrbot">
+            <img src="../../images/icon/arrbot_icon.png" alt="">
+        </div>
+        <div class="intr_mess clearfix">
+            <img src="../../images/home/fair_1.png" alt="" class="modu_img fl">
+            <div class="mess_txt fl">
+                <h3 class="rec_title">小鬼当家 —跳蚤市场爱心义卖</h3>
+                <!--<p class="activ_text">活动标签：<span>健康体验类活动</span></p>-->
+                <p class="activ_txt">活动标签：<span>入园亲子公益体验活动</span></p>
+                <!--<p class="activ_txt">适合特色：<span>健康体验类活动</span></p>-->
+                <!--<div class="clearfix">-->
+                    <!--<label class="activi_btn fl">入园体验</label>-->
+                    <!--<a href="#" class="fr free_text">免费试用</a>-->
+                <!--</div>-->
+                <div class="clearfix">
+                    <p class="moeny_text fr">￥99</p>
+                    <label class="activi_btn fl">入园体验</label>
+                </div>
+            </div>
+        </div>
+        <div class="line_back"></div>
+        <ul class="intr_list">
+            <li class="intr_li">
+                <div class="intr_tit clearfix">
+                    <span class="fl line_sp"></span>
+                    <h3 class="fl title_h">WHY -活动意义</h3>
+                </div>
+                <div class="intr_text">
+                    <p>
+                        让幼儿通过跳蚤市场的买卖活动，将家中闲置的物品进行再利用，奕废为宝，体现节约的意识。同时丰富了幼儿的角色体验，在情境模拟中提升了幼儿的社会适应能力，沟通能力与解决问题的能力。在这个活动中，孩子们还有实际行动奉献了自己的爱心，让幼儿知道自己也是可以用行动帮助别人的。
+                    </p>
+                </div>
+            </li>
+            <li class="intr_li">
+                <div class="intr_tit clearfix">
+                    <span class="fl line_sp"></span>
+                    <h3 class="fl title_h">HOW -活动流程</h3>
+                </div>
+                <div class="intr_text">
+                    <p>
+                        【布置我的杂货铺】<br>
+                        和爸爸妈妈一起布置我的杂货铺吧，赶快把我的货品摆起来！今天我是小老板。<br>
+                        【义卖开始啦】<br>
+                        此起彼伏的叫卖声可真有意思，我卖的是读过的绘本，旁边的小姑娘卖的是手工发卡，可真漂亮啊！我买你的，你买我的，忙的不亦乐乎。<br>
+                        【捐献爱心】<br>
+                        我对妈妈说：我要把自己义卖的15元钱都捐出来，因为老师告诉我们很多小朋友都没有爸爸妈妈的陪伴，我觉得15元钱可以买一个漂亮的礼物送给这些小朋友，她们一定会很开心的。<br>
+                        【购买礼物，现场捐赠】<br>
+                        孩子们的爱心捐赠变成了***公益机构小朋友需要的物品，帮助别人的快乐真的很难忘，人希望更多的人加入到爱心公益活动中来。这样的活动，太棒了！
+
+                    </p>
+                </div>
+            </li>
+            <li class="intr_li intr_nobor">
+                <div class="intr_tit clearfix">
+                    <span class="fl line_sp"></span>
+                    <h3 class="fl title_h">WHAT -我们可以做什么</h3>
+                </div>
+                <div class="intr_text">
+                    <p>
+                        1、形式新颖的活动方案，体现幼儿园特色，帮您打动家长的心；<br>
+                        2、生成园所专属活动H5链接，可一键分享，做到高效传播；<br>
+                        3、线上快速采集家长名单，实时反馈报名信息表；<br>
+                        4、活动结束，快速生成园所精彩活动回顾推文。<br>
+                        这是一套整体的活动解决方案，帮您轻松搞定幼儿园招生活动。
+                    </p>
+                </div>
+            </li>
+        </ul>
+        <div class="line_back"></div>
+        <div class="more_content">
+            <div class="cont_region">
+                <h3 class="region_tit">更多内容</h3>
+                <ul class="region_ul clearfix">
+                    <li>
+                        <img src="../../images/icon/pro_icon.png" alt="" class="region_img">
+                        <p class="region_txt">指导方案</p>
+                    </li>
+                    <li>
+                        <img src="../../images/icon/mou_icon.png" alt="" class="region_img">
+                        <p class="region_txt">创建宣品</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <footer class="buy_btn">
+            <a href="javascript:void (0);" class="buy">立即购买</a>
+        </footer>
+        <footer class="buyFree_btn">
+           <ul class="buyFree_ul">
+               <li class="buy_li">
+                   <a href="javascript:void (0);" class="buy">免费试用</a>
+               </li>
+               <li class="free_li">
+                   <a href="javascript:void (0);" class="free">付费购买</a>
+               </li>
+           </ul>
+        </footer>
+    </div>
+</div>
+<script src="../../js/jquery-2.1.1.min.js"></script>
+<script src="../../js/swiper-3.4.2.min.js"></script>
+<script src="../../js/jquery.lazyload.js"></script>
+<script src="../../js/swiper.animate1.0.2.min.js"></script>
+<script src="../../js/jweixin-1.0.0.js"></script>
+<script src="../../js/swiperWx.js"></script>
+<!--<script src="../../js/wxActivity.js"></script>-->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        function audioAutoPlay() {
+            $(".playBtn").addClass("pause").removeClass("play");
+            var audio = document.getElementById('bg-music');
+            audio.play();
+            document.addEventListener("WeixinJSBridgeReady", function () {
+                $(".playBtn").addClass("pause").removeClass("play");
+                audio.play();
+            }, false);
+        }
+        audioAutoPlay();
+        var patnimg1 = "../../images/icon/music_puase.png";
+        var patnimg2 = "../../images/icon/music_play.png";
+        $(".playBtn").click(function() {
+            if($(this).hasClass("play")) {
+                $(this).addClass("pause").removeClass("play");
+                $(".playBtn img").attr("src",patnimg2);
+                document.getElementById('bg-music').play();
+            }
+            else {
+                $(this).addClass("play").removeClass("pause");
+                $(".playBtn img").attr("src",patnimg1);
+                document.getElementById('bg-music').pause();
+            }
+        })
+    });
+    $(function () {
+        $(".send_btn").click(function () {
+            $(this).addClass("send_navgray");
+            $(".datermine").show();
+        })
+        $(".close_btn").click(function () {
+            $(".send_btn").removeClass("send_navgray");
+            $(".datermine").hide();
+        })
+        $(".intr_nav").click(function () {
+            $(".creat_page").hide();
+            $(".activity_intr").show();
+            $(".activity_intr").animate(
+                    {top:"0"},300
+            );
+            $(".buy_btn").show(600);
+            $(".footer_activ").hide();
+            document.getElementById('bg-music').pause();
+        })
+        $(".arrbot").click(function () {
+            $(".creat_page").show();
+            $(".activity_intr").animate(
+                    {top:"100%"},500
+            );
+            $(".activity_intr").hide();
+            $(".buy_btn").hide();
+            $(".slide_footer").show();
+            document.getElementById('bg-music').play();
+        })
+    });
+</script>
+
+<script>
+    $(function() {
+        var newStyle = $("<style> @font-face {font-family: 'myFont';  src: url('../../fonts/HYQiHei-50S.ttf');} </style>");
+        $('body').append(newStyle);
+    });
+</script>
+</body>
+</html>

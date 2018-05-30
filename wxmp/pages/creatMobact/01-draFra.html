@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--忽略页面中的邮箱格式为邮箱-->
+    <meta name="format-detection" content="email=no">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <title>移动端创建活动模板</title>
+    <link rel="stylesheet" href="../../css/activity_mobwx.css">
+    <link rel="stylesheet" href="../../../wxmou/css/modular.css">
+    <link rel="stylesheet" href="../../css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="../../css/animate.min.css">
+</head>
+<body style="font-family: myFont">
+<div class="datermine">
+    <p class="mine_text">
+        活动宣品信息确认无误后 <br>
+        点击【确定】按钮，就可分享邀约啦
+    </p>
+    <ul class="mine_ul clearfix">
+        <li>
+            <a href="javascript:void (0);" class="sure_btn">确定</a>
+        </li>
+        <li>
+            <a href="javascript:void (0);" class="sure_btn close_btn">关闭</a>
+        </li>
+    </ul>
+</div>
+<div class="warp_creat mobils_warp">
+    <!--背景色-->
+    <div class="myswiper-container creat_page dra_page" style="background-color: #fff;">
+        <audio style="display:none; height: 0" id="bg-music" preload="auto" src="../../music/动物园的小熊们.mp3" loop="loop"></audio>
+        <div class="playBtn play">
+            <img src="../../images/icon/music_play.png" alt="">
+        </div>
+        <!--返回按钮-->
+        <div class="sendBtn">
+            <img src="../../images/icon/send_icon.png" alt="">
+        </div>
+        <!--编辑按钮-->
+        <div class="editBtn">
+            <img src="../../images/icon/edit_img.png" alt="">
+        </div>
+        <div class="swiper-wrapper">
+            <!--第一屏  首页-->
+            <!--1、背景图-->
+            <div class="swiper-slide dra_home" style="background-image: url('../../../wxmou/images/draFes/back1.png')">
+                <!--第一个竹子-->
+                <img src="../../../wxmou/images/draFes/bam1.png" alt="" class="bam_one">
+                <!--第二个竹子-->
+                <img src="../../../wxmou/images/draFes/bam2.png" alt="" class="bam_tow">
+                <!--背景上的圆-->
+                <img src="../../../wxmou/images/draFes/cir1.png" alt="" class="cri ani" swiper-animate-effect="rotateIn" swiper-animate-duration="1s" swiper-animate-delay="1s">
+                <!--第一个云-->
+                <img src="../../../wxmou/images/draFes/cloud1.png" alt="" class="cloud_noe ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5" swiper-animate-delay="0.1s">
+                <!--第二个云-->
+                <img src="../../../wxmou/images/draFes/cloud2.png" alt="" class="cloud_two ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5" swiper-animate-delay="0.1s">
+                <!--端-->
+                <img src="../../../wxmou/images/draFes/duan.png" alt="" class="theme_one ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1" swiper-animate-delay="1s">
+                <!--午-->
+                <img src="../../../wxmou/images/draFes/wu.png" alt="" class="theme_two ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1" swiper-animate-delay="1.4s">
+                <!--节-->
+                <img src="../../../wxmou/images/draFes/jie.png" alt="" class="theme_thr ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1" swiper-animate-delay="1.8s">
+                <!--五月五文字-->
+                <img src="../../../wxmou/images/draFes/wutext.png" alt="" class="theme_four ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1" swiper-animate-delay="2.2s">
+                <!--传统节日文字-->
+                <p class="text_p ani" swiper-animate-effect="rotateInDownRight" swiper-animate-duration="1s" swiper-animate-delay="1.5s">— 中国传统节日 —</p>
+                <!--龙舟-->
+                <img src="../../../wxmou/images/draFes/loo.png" alt="" class="loo ani" swiper-animate-effect="lightSpeedIn" swiper-animate-duration="1" swiper-animate-delay="2.5s">
+
+                <!--粽子图片-->
+                <img src="../../../wxmou/images/draFes/rice.png" alt="" class="rice ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1" swiper-animate-delay="3s">
+
+                <!--footer-->
+                <img src="../../../wxmou/images/draFes/footer1.png" alt="" class="footer_one ani" swiper-animate-effect="slideInUp" swiper-animate-duration="1" swiper-animate-delay="2s">
+            </div>
+            <!--第二屏-->
+            <div class="swiper-slide dra_invi swiper-lazy" data-background="../../../wxmou/images/draFes/back2.png">
+                <!--第一个竹子-->
+                <img data-src="../../../wxmou/images/draFes/bam1.png" alt="" class="bam_one swiper-lazy">
+                <!--第二个竹子-->
+                <img data-src="../../../wxmou/images/draFes/bam2.png" alt="" class="bam_tow swiper-lazy">
+                <!--幼儿园logo-->
+                <img data-src="../../../wxmou/images/video_home.png" alt="" class="logo_render swiper-lazy">
+                <!--幼儿园名称-->
+                <div  id="kinder_name" class="invi_title ani" swiper-animate-effect="rotateInDownRight" swiper-animate-duration="1s" swiper-animate-delay="1.5s">
+                    <p>家家网教育中中心家家家网教育中中心家</p>
+                </div>
+                <!--邀您参加免费亲子体验活动-->
+                <div class="invi_txt ani" swiper-animate-effect="slideInLeft" swiper-animate-duration="1s" swiper-animate-delay="1.8s">
+                    <p>邀您参加免费亲子体验活动</p>
+                </div>
+                <!--主题的标题位置-->
+                <div class="theme_title">
+                    <img data-src="../../../wxmou/images/draFes/redicon.png" alt="" class="swiper-lazy title_left ani" swiper-animate-effect="slideInLeft" swiper-animate-duration="1s" swiper-animate-delay="2.2s">
+                    <img data-src="../../../wxmou/images/draFes/title2.png" alt="" class="swiper-lazy title_right ani" swiper-animate-effect="slideInRight" swiper-animate-duration="1s" swiper-animate-delay="2.2s">
+                </div>
+                <!--主题图-->
+                <img data-src="../../../wxmou/images/draFes/gran.png" alt="" class="swiper-lazy theme_img ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="3s">
+            </div>
+            <!--第三屏   活动介绍-->
+            <!--1、背景图-->
+            <div class="swiper-slide dra_intr swiper-lazy" data-background="../../../wxmou/images/draFes/back3.png">
+                <!--第一个竹子-->
+                <img data-src="../../../wxmou/images/draFes/bam1.png" alt="" class="bam_one swiper-lazy">
+                <!--第三屏的第二个竹子-->
+                <img data-src="../../../wxmou/images/draFes/bam3.png" alt="" class="bam_thr swiper-lazy">
+                <!--描述文本-->
+                <img data-src="../../../wxmou/images/draFes/describe.png" alt="" class="swiper-lazy describe_img ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="1.2s">
+                <!--节日习俗图片-->
+                <div class="custom clearfix">
+                    <img data-src="../../../wxmou/images/draFes/rice3.png" alt="" class="swiper-lazy custom_left ani fl" swiper-animate-effect="slideInLeft" swiper-animate-duration="1s" swiper-animate-delay="2.2s">
+                    <img data-src="../../../wxmou/images/draFes/colourful.png" alt="" class="swiper-lazy custom_right ani lf" swiper-animate-effect="slideInRight" swiper-animate-duration="1s" swiper-animate-delay="2.2s">
+                </div>
+                <!--赛龙舟图标-->
+                <img data-src="../../../wxmou/images/draFes/sai.png" alt="" class="swiper-lazy sai_img ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="3s">
+                <!--赛龙舟-->
+                <img data-src="../../../wxmou/images/draFes/loo3.png" alt="" class="swiper-lazy loo_thr ani" swiper-animate-effect="lightSpeedIn" swiper-animate-duration="1" swiper-animate-delay="3.5s">
+                <!--幼儿园名称-->
+                <div  class="intr_text ani" swiper-animate-effect="bounceInUp" swiper-animate-duration="1s" swiper-animate-delay="3.8s">
+                    <p>
+                        精彩的节日传统活动等着你和宝贝一起来 <br>
+                        还有精美礼品哟！
+                    </p>
+                </div>
+                <!--footer-->
+                <img data-src="../../../wxmou/images/draFes/footer3.png" alt="" class="swiper-lazy footer_thr ani" swiper-animate-effect="slideInUp" swiper-animate-duration="1" swiper-animate-delay="3s">
+            </div>
+            <!--第四屏  活动信息-->
+            <!--1、背景图-->
+            <div class="swiper-slide dra_mess swiper-lazy" data-background="../../../wxmou/images/draFes/back4.png">
+                <!--2、标题位置点（内容：活动信息）  默认的字体颜色为白色，加class="mess_titleblack"，字体为黑色-->
+                <h3 class="mess_title">活动信息</h3>
+                <ul class="mess_list">
+                    <li>
+                        <div class="clearfix list ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.1s">
+                            <img data-src="../../../wxmou/images/icon/time.png" alt="" class="swiper-lazy timeimg fl">
+                            <h4 class="mess_time fl">时间</h4>
+                        </div>
+                        <div class="time_num clearfix ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.2s">
+                            <span id="year_num">2018-01-23 周二 上午 01:30:00</span>&nbsp;<span class="time_p" style="display:none">01:30</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="clearfix list ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.3s">
+                            <img data-src="../../../wxmou/images/icon/add.png" alt="" class="swiper-lazy mess_address fl">
+                            <h4 class="mess_time fl">地点</h4>
+                        </div>
+                        <div class="time_num address ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.4s">
+                            <span id="address">北京市 市辖区 海淀区</span>
+                            <span id="add_1">18号互联网教育创新中心B座</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="clearfix list ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.5s">
+                            <img data-src="../../../wxmou/images/icon/tell.png" alt="" class="swiper-lazy timeimg fl">
+                            <h4 class="mess_time fl">咨询电话</h4>
+                        </div>
+                        <p  id="tell_num" class="time_num ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.6s">010 - 12345678</p>
+                    </li>
+                </ul>
+                <!--3、导语的位置点（class="mess_bot"）  默认的字体颜色为白色，加class="mess_botblack"，字体为黑色-->
+                <div class="mess_bot ani" swiper-animate-effect="slideInLeft" swiper-animate-duration="0.8s" swiper-animate-delay="0.4s">
+                    如果宝宝的年龄在2—3岁，<br>
+                    那赶紧报名吧！<br>
+                    只限20组家庭，手慢无！<br>
+                    报名后，老师会跟你联系哦！
+                </div>
+                <!--第四屏主题图-->
+                <img data-src="../../../wxmou/images/draFes/rice4.png" alt="" class="swiper-lazy theme_rice ani" swiper-animate-effect="slideInUp" swiper-animate-duration="1" swiper-animate-delay="0.4s">
+            </div>
+
+            <!--第五屏 用户信息-->
+            <!--1、背景图-->
+            <div class="swiper-slide dra_user swiper-lazy" data-background="../../../wxmou/images/draFes/back5.png">
+                <!--2、标题位置点（内容： 填写信息） 默认的字体颜色为白色，加class="mess_titleblack"，字体为黑色-->
+                <h3 class="mess_title">填写信息</h3>
+                <ul class="mess_list">
+                    <li class="baby_name ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.2s">
+                        <input type="text" class="baby_input" placeholder="请输入宝宝名称">
+                    </li>
+                    <li class="baby_name ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.3s" id="messDate">
+                        <input type="tel" placeholder="请输入出生日期"  readonly="readonly"  class="baby_input" id="date1">
+                    </li>
+                    <li class="baby_name ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.4s">
+                        <input type="tel" class="baby_input"  placeholder="请输入联系电话"  id="j_phone">
+                        <a href="javascript:void (0)" class="obtain_code" id="j_getVerifyCode">获取验证码</a>
+                    </li>
+                    <li class="baby_name ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.5s">
+                        <input type="tel" placeholder="请输入手机验证码" class="baby_input">
+                    </li>
+                    <p class="cord_error">短信验证码输入错误</p>
+                    <a href="#" class="sub_btn ani" swiper-animate-effect="bounceInUp" swiper-animate-duration="0.8s" swiper-animate-delay="0.7s">提交</a>
+                </ul>
+            </div>
+        </div>
+
+        <footer class="footer_activ slide_footer">
+            <!--创建活动底部(只有活动介绍和购买按钮)-->
+            <ul class="footer_ul clearfix">
+                <li class="silde_nav intr_nav">
+                    <a href="javascript:void (0);">活动介绍</a>
+                </li>
+                <li class="silde_nav buy_nav">
+                    <a href="javascript:void (0);">购买</a>
+                </li>
+                <!--<li class="silde_nav free_nav">-->
+                    <!--<a href="javascript:void (0);">免费试用</a>-->
+                <!--</li>-->
+            </ul>
+            <!--//创建活动底部(指导方案 、 预览 、发送)-->
+            <!--<ul class="pro_ul clearfix">-->
+                <!--<li class="silde_nav pro_nav">-->
+                    <!--<a href="javascript:void (0);">指导方案</a>-->
+                <!--</li>-->
+                <!--<li class="silde_nav prew_nav">-->
+                    <!--<a href="javascript:void (0);">预览</a>-->
+                <!--</li>-->
+                <!--<li class="silde_nav send_nav send_btn">-->
+                    <!--<a href="javascript:void (0);">发送</a>-->
+                <!--</li>-->
+            <!--</ul>-->
+            <!--<ul class="creat_ul clearfix">-->
+                <!--<li class="silde_nav intr_nav">-->
+                    <!--<a href="javascript:void (0);">活动介绍</a>-->
+                <!--</li>-->
+                <!--<li class="silde_nav creat_nav">-->
+                    <!--<a href="javascript:void (0);">创建宣品</a>-->
+                <!--</li>-->
+            <!--</ul>-->
+        </footer>
+    </div>
+    <div class="activity_intr">
+        <div class="arrbot">
+            <img src="../../images/icon/arrbot_icon.png" alt="">
+        </div>
+        <div class="intr_mess clearfix">
+            <img src="../../images/home/fair_1.png" alt="" class="modu_img fl">
+            <div class="mess_txt fl">
+                <h3 class="rec_title">端午节（音乐律动）</h3>
+                <p class="activ_text">活动标签：<span>健康体验类活动</span></p>
+                <p class="activ_txt">适合特色：<span>健康体验类活动</span></p>
+                <!--<div class="clearfix">-->
+                    <!--<label class="activi_btn fl">入园体验</label>-->
+                    <!--<a href="#" class="fr free_text">免费试用</a>-->
+                <!--</div>-->
+                <div class="clearfix">
+                    <p class="moeny_text fr">￥99</p>
+                    <label class="activi_btn fl">入园体验</label>
+                </div>
+            </div>
+        </div>
+        <div class="line_back"></div>
+        <ul class="intr_list">
+            <li class="intr_li">
+                <div class="intr_tit clearfix">
+                    <span class="fl line_sp"></span>
+                    <h3 class="fl title_h">WHY -活动意义</h3>
+                </div>
+                <div class="intr_text">
+                    <p>
+                        五月初五端午节，吃粽子、赛龙舟、结五彩绳端午节的传统活动，而端午节的另一个主要意义是祭奠屈原以及缅怀华夏民族高洁的情怀，让我们的孩子们去了解中国历史是非常重要的，如何让孩子和家长们在快乐中感受中国传统文化呢？那就快来和我们一起度过这个与“粽”不同的端午节吧！
+                    </p>
+                </div>
+            </li>
+            <li class="intr_li">
+                <div class="intr_tit clearfix">
+                    <span class="fl line_sp"></span>
+                    <h3 class="fl title_h">HOW -活动流程程</h3>
+                </div>
+                <div class="intr_text">
+                    <p>
+                        【热身舞蹈】<br>
+                        宝贝们和家长们，一起加入到我们快乐的舞蹈当中吧，跟随音乐一起跳起来、动起来。让每个宝宝瞬间融入到这个快乐的大家庭。<br>
+                        【包粽子】<br>
+                        包粽子、吃粽子是端午节必不可少的风俗习惯。家家户户在端午节这天都要一起品尝美味的粽子。可是，亲爱的爸爸妈妈们，你们会包粽子吗？别着急，带着宝贝一起来和老师学习包粽子吧，让宝宝们在动手中感受不同节日的乐趣。<br>
+                        【系五彩绳】<br>
+                        传说在端午节的清晨，家家户户的大人起床后的第一件大事便是在孩子的手腕、脚腕、脖子上拴上五色线，大家知道这是为什么吗？一起来揭秘吧！<br>
+                        【赛龙舟】<br>
+                        赛龙舟，是端午节的传统习俗。相传起源于古时，楚国人因舍不得贤臣屈原投江死去，许多人划船追赶拯救，由此，这个风俗就被流传了下来，今天我们也要一起划龙舟、赛龙舟，用我们自己方式来了解、传承。
+                    </p>
+                </div>
+            </li>
+            <li class="intr_li intr_nobor">
+                <div class="intr_tit clearfix">
+                    <span class="fl line_sp"></span>
+                    <h3 class="fl title_h">WHAT -我们可以做什么</h3>
+                </div>
+                <div class="intr_text">
+                    <p>
+                        1、形式新颖的活动方案，体现幼儿园特色，帮您打动家长的心；<br>
+                        2、生成园所专属活动H5链接，可一键分享，做到高效传播；<br>
+                        3、线上快速采集家长名单，实时反馈报名信息表；<br>
+                        4、活动结束，快速生成园所精彩活动回顾推文。<br>
+                        这是一套整体的活动解决方案，帮您轻松搞定幼儿园招生活动。
+                    </p>
+                </div>
+            </li>
+        </ul>
+        <div class="line_back"></div>
+        <div class="more_content">
+            <div class="cont_region">
+                <h3 class="region_tit">更多内容</h3>
+                <ul class="region_ul clearfix">
+                    <li>
+                        <img src="../../images/icon/pro_icon.png" alt="" class="region_img">
+                        <p class="region_txt">指导方案</p>
+                    </li>
+                    <li>
+                        <img src="../../images/icon/mou_icon.png" alt="" class="region_img">
+                        <p class="region_txt">创建宣品</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <footer class="buy_btn">
+            <a href="javascript:void (0);" class="buy">立即购买</a>
+        </footer>
+        <footer class="buyFree_btn">
+           <ul class="buyFree_ul">
+               <li class="buy_li">
+                   <a href="javascript:void (0);" class="buy">免费试用</a>
+               </li>
+               <li class="free_li">
+                   <a href="javascript:void (0);" class="free">付费购买</a>
+               </li>
+           </ul>
+        </footer>
+    </div>
+</div>
+<script src="../../js/jquery-2.1.1.min.js"></script>
+<script src="../../js/swiper-3.4.2.min.js"></script>
+<script src="../../js/jquery.lazyload.js"></script>
+<script src="../../js/swiper.animate1.0.2.min.js"></script>
+<script src="../../js/jweixin-1.0.0.js"></script>
+<script src="../../js/swiperWx.js"></script>
+<!--<script src="../../js/wxActivity.js"></script>-->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        function audioAutoPlay() {
+            $(".playBtn").addClass("pause").removeClass("play");
+            var audio = document.getElementById('bg-music');
+            audio.play();
+            document.addEventListener("WeixinJSBridgeReady", function () {
+                $(".playBtn").addClass("pause").removeClass("play");
+                audio.play();
+            }, false);
+        }
+        audioAutoPlay();
+        var patnimg1 = "../../images/icon/music_puase.png";
+        var patnimg2 = "../../images/icon/music_play.png";
+        $(".playBtn").click(function() {
+            if($(this).hasClass("play")) {
+                $(this).addClass("pause").removeClass("play");
+                $(".playBtn img").attr("src",patnimg2);
+                document.getElementById('bg-music').play();
+            }
+            else {
+                $(this).addClass("play").removeClass("pause");
+                $(".playBtn img").attr("src",patnimg1);
+                document.getElementById('bg-music').pause();
+            }
+        })
+    });
+    $(function () {
+        $(".send_btn").click(function () {
+            $(this).addClass("send_navgray");
+            $(".datermine").show();
+        })
+        $(".close_btn").click(function () {
+            $(".send_btn").removeClass("send_navgray");
+            $(".datermine").hide();
+        })
+        $(".intr_nav").click(function () {
+            $(".creat_page").hide();
+            $(".activity_intr").show();
+            $(".activity_intr").animate(
+                    {top:"0"},300
+            );
+            $(".buy_btn").show(600);
+            $(".footer_activ").hide();
+            document.getElementById('bg-music').pause();
+        })
+        $(".arrbot").click(function () {
+            $(".creat_page").show();
+            $(".activity_intr").animate(
+                    {top:"100%"},500
+            );
+            $(".activity_intr").hide();
+            $(".buy_btn").hide();
+            $(".slide_footer").show();
+            document.getElementById('bg-music').play();
+        })
+    });
+</script>
+
+<script>
+    $(function() {
+        var newStyle = $("<style> @font-face {font-family: 'myFont';  src: url('../../fonts/HYQiHei-50S.ttf');} </style>");
+        $('body').append(newStyle);
+    });
+</script>
+</body>
+</html>

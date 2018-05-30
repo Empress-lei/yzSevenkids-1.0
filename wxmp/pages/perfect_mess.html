@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--忽略页面中的邮箱格式为邮箱-->
+    <meta name="format-detection" content="email=no">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <title>完善信息页</title>
+    <link rel="stylesheet" href="../css/datesele.css">
+    <link rel="stylesheet" href="../css/index_wx.css">
+    <script src="../js/jquery-2.1.1.min.js"></script>
+</head>
+<body style="font-family: myFont;">
+<div class="warp_wx">
+    <div class="perfect_page">
+        <!--<div class="line_back"></div>-->
+        <ul class="perfect_div">
+            <li class="mess_li">
+                <div class="mess_per clearfix">
+                    <h3 class="fl title_left title_pa">园所logo</h3>
+                    <div class="portrait fr">
+                        <a href="#" class="file_logo">
+                            <input value="浏览" type="file">
+                            <img src="../../images/icon/acti_icon.png" alt="" class="file_img">
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="mess_li">
+                <div class="mess_per clearfix">
+                    <h3 class="fl title_left">园所名称:</h3>
+                    <div class="mess_right fl">
+                        <input type="text" placeholder="请输入园所名称">
+                    </div>
+                </div>
+            </li>
+            <li class="mess_li">
+                <div class="mess_per clearfix">
+                    <h3 class="fl title_left">咨询电话:</h3>
+                    <div class="mess_right fl">
+                        <input type="tel" placeholder="请输入入园所咨询电话">
+                    </div>
+                </div>
+            </li>
+            <li class="mess_li">
+                <div class="mess_per clearfix">
+                    <h3 class="fl title_left">合作方:</h3>
+                    <div class="mess_right fl">
+                        <input type="text" placeholder="请请输入合作方名称">
+                    </div>
+                </div>
+            </li>
+            <li class="mess_li">
+                <div class="mess_per clearfix">
+                    <h3 class="fl title_left">活动时间:</h3>
+                    <div class="mess_right fl">
+                        <input type="tel" placeholder="请选择活动开始时间"  readonly="readonly" id="date1">
+                        <!--<h3 class="time_num" id="date1">请选择时间</h3>-->
+                    </div>
+                </div>
+            </li>
+            <li class="mess_li">
+                <div class="mess_per clearfix filter-box">
+                    <h3 class="fl title_left">活动时间:</h3>
+                    <div class="mess_right fl">
+                        <input type="text" class="filter-title" id="time_branch" readonly="readonly" placeholder=" 08：30 ">
+                        <!--<h3 class="time_num" id="date1">请选择时间</h3>-->
+                    </div>
+                    <select name="filter">
+                        <option value="07:30">07:30</option>
+                        <option value="08:00">08:00</option>
+                        <option value="08:30">08:30</option>
+                        <option value="09:00">09:00</option>
+                        <option value="09:30">09:30</option>
+                        <option value="10:00">10:00</option>
+                        <option value="10:30">10:30</option>
+                        <option value="11:00">11:00</option>
+                        <option value="11:30">11:30</option>
+                        <option value="12:00">12:00</option>
+                        <option value="12:30">12:30</option>
+                        <option value="13:00">13:00</option>
+                        <option value="13:30">13:30</option>
+                        <option value="14:00">14:00</option>
+                        <option value="14:30">14:30</option>
+                        <option value="15:00">15:00</option>
+                        <option value="15:30">15:30</option>
+                        <option value="16:00">16:00</option>
+                        <option value="16:30">16:30</option>
+                        <option value="17:00">17:00</option>
+                        <option value="17:30">17:30</option>
+                        <option value="18:00">18:00</option>
+                        <option value="18:30">18:30</option>
+                        <option value="19:00">19:00</option>
+                        <option value="20:30">20:30</option>
+                        <option value="21:00">21:00</option>
+                        <option value="21:30">21:30</option>
+                        <option value="22:00">22:00</option>
+                    </select>
+                </div>
+            </li>
+            <li class="mess_li none_bor">
+                <div class="mess_per clearfix">
+                    <h3 class="fl title_left">活动地址:</h3>
+                    <div class="mess_address fl">
+                        <!--获取到地址返回来之后   给p加类名curP-->
+                        <!--<input type="text">-->
+                        <textarea name="" class="sele_add"  placeholder="请输入活动地址"></textarea>
+                        <!--<p></p>-->
+                    </div>
+                </div>
+            </li>
+            <li class="mess_map" style="display: none;">
+                <a href="http://apis.map.qq.com/tools/locpicker?search=1&type=0&backurl=http://3gimg.qq.com/lightmap/components/locationPicker2/back.html&key=OB4BZ-D4W3U-B7VVO-4PJWW-6TKDJ-WPB77&referer=myapp">
+                    <img src="../images/mess/map_img.png" alt="" class="map_img">
+                    <img src="../images/mess/address_icon.png" alt="" class="address_icon">
+                </a>
+            </li>
+        </ul>
+
+
+        <!--所有信息完善后  加类名 perfect_orabtn   变为可提交状态-->
+        <footer class="perfect_garybtn ">
+            <a href="#">保存</a>
+        </footer>
+    </div>
+</div>
+</body>
+<script src="../js/jquery.date.js"></script>
+<script src="../js/areaAuto.js"></script>
+<script>
+    $(function() {
+        $('.filter-box').click(function () {
+            $(".filter-list").show();
+        });
+        $(".sele_add").focus(function () {
+            $(".sele_add").autoHeight();
+        });
+        //选择时间
+        $('.filter-box').selectFilter({
+            callBack: function (val) {
+                //返回选择的值
+                console.log(val + '-是返回的值')
+            }
+        });
+        $.date('#date1');
+        var newStyle = $("<style> @font-face {font-family: 'myFont';  src: url('../fonts/HYQiHei-50S.ttf');} </style>");
+        $('body').append(newStyle);
+    });
+    jQuery.fn.selectFilter = function (options) {
+        var defaults = {
+            callBack: function (res) {
+            }
+        };
+        var ops = $.extend({}, defaults, options);
+        var selectList = $(this).find('select option');
+        var that = this;
+        var html = '';
+        // 读取select 标签的值
+        html += '<ul class="filter-list">';
+        $(selectList).each(function (idx, item) {
+            var val = $(item).val();
+            // console.log(val)
+            var valText = $(item).html();
+            var selected = $(item).attr('selected');
+            var disabled = $(item).attr('disabled');
+            var isSelected = selected ? 'filter-selected' : '';
+            var isDisabled = disabled ? 'filter-disabled' : '';
+            if (selected) {
+                html += '<li class="' + isSelected + '" data-value="' + val + '"><a title="' + valText + '">' + valText + '</a></li>';
+                $(that).find('.filter-title').val(valText);
+                console.log($("#myiframe").contents().find("#time_num").html(valText))
+            } else if (disabled) {
+                html += '<li class="' + isDisabled + '" data-value="' + val + '"><a>' + valText + '</a></li>';
+            } else {
+                html += '<li data-value="' + val + '"><a title="' + valText + '">' + valText + '</a></li>';
+            }
+            ;
+        });
+        html += '</ul>';
+
+        $(that).append(html);
+        $(that).find('select').hide();
+
+        //点击选择
+        $(that).on('click', '.time_branch', function () {
+            $(that).find('.filter-list').slideToggle(100);
+            $(that).find('.filter-list').toggleClass('filter-open');
+        });
+        //点击选择列表
+        $(that).find('.filter-list li').not('.filter-disabled').on('click', function () {
+            var val = $(this).data('value');
+            var valText = $(this).find('a').html();
+            $(that).find('.filter-title').val(valText);
+            $(that).find('.icon-filter-arrow').toggleClass('filter-show');
+            $(this).addClass('filter-selected').siblings().removeClass('filter-selected');
+            $(this).parent().slideToggle(50);
+            for (var i = 0; i < selectList.length; i++) {
+                var selectVal = selectList.eq(i).val();
+                if (val == selectVal) {
+                    $(that).find('select').val(val);
+                }
+                ;
+            }
+            ;
+            ops.callBack(val); //返回值
+        });
+
+        //其他元素被点击则收起选择
+        $(document).on('mousedown', function (e) {
+            closeSelect(that, e);
+        });
+        $(document).on('touchstart', function (e) {
+            closeSelect(that, e);
+        });
+        function closeSelect(that, e) {
+            var filter = $(that).find('.filter-list'),
+                filterEl = $(that).find('.filter-list')[0];
+            var filterBoxEl = $(that)[0];
+            var target = e.target;
+            if (filterEl !== target && !$.contains(filterEl, target) && !$.contains(filterBoxEl, target)) {
+                filter.slideUp(50);
+                $(that).find('.filter-list').removeClass('filter-open');
+                $(that).find('.icon-filter-arrow').removeClass('filter-show');
+            }
+            ;
+        }
+
+        //标签选择
+        $('.lab_pubbtn li').click(function () {
+            if ($(this).hasClass('orange_btn')) {
+                $(this).removeClass('orange_btn');
+            } else {
+                $(this).addClass('orange_btn');
+                $('.lab_pribtn li').removeClass('orange_btn');
+            }
+        });
+    };
+</script>
+</html>

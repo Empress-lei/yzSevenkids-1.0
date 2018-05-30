@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--忽略页面中的邮箱格式为邮箱-->
+    <meta name="format-detection" content="email=no">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <title>导师推广</title>
+    <link rel="stylesheet" href="../css/index_wx.css">
+    <script src="../js/jquery-2.1.1.min.js"></script>
+    <script src="../js/video/video.min.js"></script>
+    <script src="../js/video/videojs-ie8.min.js"></script>
+    <script src="../js/video/zh-CN.js"></script>
+    <script src="../js/wxvideo.js"></script>
+</head>
+<body style="font-family: myFont">
+<div class="warp_wx">
+    <div class="data_pages">
+        <div class="data_wx render_wx">
+            <img src="../images/main/render_img.png" alt="" class="data_img">
+            <h3 class="data_tit">导师推广</h3>
+            <p class="data_text">30秒生成专属海报，一键分享至家长端，快速传播。</p>
+        </div>
+        <div class="line_divs"></div>
+        <div class="video_div">
+            <div class="video_play">
+                <img src="../images/main/playbtn.png" alt="" class="play_btn">
+                <img src="../images/video2.png" alt="" class="video-img">
+                <div class="share_lay"></div>
+            </div>
+            <div class="video_share" style="display: none">
+                <video id="my-video" class="video-js video-img"  webkit-playsinline="true" x-webkit-airplay="true" x5-video-player-type="h5" playsinline preload="none" controls="controls"
+                       poster="../images/video2.png" data-setup="{}">
+                    <source src="../video/helpvideo.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(function() {
+        var newStyle = $("<style> @font-face {font-family: 'myFont';  src: url('../fonts/HYQiHei-50S.ttf');} </style>");
+        $('body').append(newStyle);
+    });
+</script>
+</body>
+</html>
